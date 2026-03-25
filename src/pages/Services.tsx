@@ -45,10 +45,10 @@ const serviceSections: ServiceSection[] = [
     title: "Kitchen Renovation",
     description:
       "Full kitchen upgrades including cabinets, countertops, backsplash, and more — built to last and designed to impress.",
-    galleryAlts: [
-      "Marble countertop kitchen renovation in progress",
-      "Completed blue island kitchen renovation",
-      "White two-tone cabinet kitchen",
+    gallery: [
+      { alt: "Marble countertop kitchen renovation in progress" },
+      { alt: "Completed blue island kitchen renovation" },
+      { alt: "White two-tone cabinet kitchen" },
     ],
   },
   {
