@@ -8,10 +8,15 @@ import mediaWall2 from "@/assets/media-wall-2.jpg";
 import mediaWall3 from "@/assets/media-wall-3.png";
 import mediaWall4 from "@/assets/media-wall-4.jpg";
 
+interface GalleryItem {
+  alt: string;
+  src?: string;
+}
+
 interface ServiceSection {
   title: string;
   description: string;
-  galleryAlts: string[];
+  gallery: GalleryItem[];
 }
 
 const serviceSections: ServiceSection[] = [
