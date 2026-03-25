@@ -34,11 +34,11 @@ const serviceSections: ServiceSection[] = [
     title: "Media Wall Designs",
     description:
       "Custom built-in entertainment walls crafted with precision, lighting, and detail that transforms any living space.",
-    galleryAlts: [
-      "Black and gold geometric fireplace media wall",
-      "White built-in entertainment center",
-      "Luxury niche shelving wall design",
-      "Marble and wood slat media wall with LED lighting",
+    gallery: [
+      { alt: "White built-in entertainment center with fireplace", src: mediaWall1 },
+      { alt: "White built-in media wall with black slat backing", src: mediaWall2 },
+      { alt: "Marble and wood slat media wall with LED lighting", src: mediaWall3 },
+      { alt: "Custom built-in entertainment center in progress", src: mediaWall4 },
     ],
   },
   {
