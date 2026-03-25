@@ -13,6 +13,8 @@ import garageDoor3 from "@/assets/garage-door-3.png";
 import kitchen1 from "@/assets/kitchen-1.jpg";
 import kitchen2 from "@/assets/kitchen-2.jpg";
 import kitchen3 from "@/assets/kitchen-3.jpg";
+import accentWall1 from "@/assets/accent-wall-1.jpg";
+import accentWall2 from "@/assets/accent-wall-2.jpg";
 
 interface GalleryItem {
   alt: string;
