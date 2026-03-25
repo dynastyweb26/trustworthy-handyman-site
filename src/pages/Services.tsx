@@ -128,15 +128,21 @@ const Services = () => {
               </div>
 
               {/* Gallery */}
-              <div className={`grid gap-3 ${service.galleryAlts.length > 2 ? "grid-cols-2" : "grid-cols-1"} ${isReversed ? "lg:[direction:ltr]" : ""}`}>
-                {service.galleryAlts.map((alt, i) => (
+              <div className={`grid gap-3 ${service.gallery.length > 2 ? "grid-cols-2" : "grid-cols-1"} ${isReversed ? "lg:[direction:ltr]" : ""}`}>
+                {service.gallery.map((item, i) => (
                   <div
                     key={i}
-                    className="flex aspect-[4/3] items-center justify-center rounded-lg border border-border bg-secondary/10"
+                    className="overflow-hidden rounded-lg border border-border bg-secondary/10 aspect-[4/3]"
                   >
-                    <span className="px-4 text-center text-xs text-muted-foreground">
-                      {alt}
-                    </span>
+                    {item.src ? (
+                      <img src={item.src} alt={item.alt} className="h-full w-full object-cover" />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center">
+                        <span className="px-4 text-center text-xs text-muted-foreground">
+                          {item.alt}
+                        </span>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
