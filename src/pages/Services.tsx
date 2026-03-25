@@ -24,10 +24,10 @@ const serviceSections: ServiceSection[] = [
     title: "Garage Door Services",
     description:
       "From installations to repairs and opener replacements, garage doors are our specialty. We get it done right the first time.",
-    galleryAlts: [
-      "Garage door track repair in progress",
-      "Chamberlain garage door opener installation",
-      "Triple garage door exterior view",
+    gallery: [
+      { alt: "Garage door track repair in progress" },
+      { alt: "Chamberlain garage door opener installation" },
+      { alt: "Triple garage door exterior view" },
     ],
   },
   {
