@@ -1,0 +1,162 @@
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+
+interface ServiceSection {
+  title: string;
+  description: string;
+  galleryAlts: string[];
+}
+
+const serviceSections: ServiceSection[] = [
+  {
+    title: "Garage Door Services",
+    description:
+      "From installations to repairs and opener replacements, garage doors are our specialty. We get it done right the first time.",
+    galleryAlts: [
+      "Garage door track repair in progress",
+      "Chamberlain garage door opener installation",
+      "Triple garage door exterior view",
+    ],
+  },
+  {
+    title: "Media Wall Designs",
+    description:
+      "Custom built-in entertainment walls crafted with precision, lighting, and detail that transforms any living space.",
+    galleryAlts: [
+      "Black and gold geometric fireplace media wall",
+      "White built-in entertainment center",
+      "Luxury niche shelving wall design",
+      "Marble and wood slat media wall with LED lighting",
+    ],
+  },
+  {
+    title: "Kitchen Renovation",
+    description:
+      "Full kitchen upgrades including cabinets, countertops, backsplash, and more — built to last and designed to impress.",
+    galleryAlts: [
+      "Marble countertop kitchen renovation in progress",
+      "Completed blue island kitchen renovation",
+      "White two-tone cabinet kitchen",
+    ],
+  },
+  {
+    title: "Accent Walls",
+    description:
+      "Decorative feature walls that add character, depth, and a custom feel to any room.",
+    galleryAlts: [
+      "Black and gold accent wall close-up",
+      "Decorative accent wall detail",
+    ],
+  },
+  {
+    title: "Flooring & Carpet Removal",
+    description:
+      "LVP, hardwood, tile installation, and full carpet removal. Clean, level, and built to last.",
+    galleryAlts: [
+      "LVP flooring installation in progress",
+      "Completed dark hardwood flooring",
+    ],
+  },
+  {
+    title: "In-House Painting",
+    description:
+      "Interior painting done clean, precise, and with care — walls, cabinets, trim, and more.",
+    galleryAlts: [
+      "Freshly painted kitchen cabinets",
+      "Cabinet painting detail work",
+    ],
+  },
+];
+
+const Services = () => {
+  return (
+    <>
+      <Helmet>
+        <title>Our Services | Smart Handyman — Texas</title>
+        <meta
+          name="description"
+          content="Smart Handyman provides garage door services, media wall designs, kitchen renovation, accent walls, flooring, and interior painting across Texas."
+        />
+      </Helmet>
+      <Navbar />
+
+      {/* Page Header */}
+      <section className="bg-secondary text-secondary-foreground">
+        <div className="container mx-auto px-4 py-16 text-center lg:px-8 lg:py-24">
+          <h1 className="font-heading text-4xl font-bold uppercase tracking-tight lg:text-5xl">
+            Our Services
+          </h1>
+          <p className="mt-4 text-base text-secondary-foreground/70">
+            Honest work. Quality results. Faithfully serving Texas.
+          </p>
+        </div>
+      </section>
+
+      {/* Service Sections */}
+      {serviceSections.map((service, index) => {
+        const isReversed = index % 2 !== 0;
+        return (
+          <section
+            key={service.title}
+            className={`${index % 2 === 0 ? "bg-background" : "bg-muted"}`}
+          >
+            <div
+              className={`container mx-auto grid gap-10 px-4 py-16 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-24 ${
+                isReversed ? "lg:[direction:rtl]" : ""
+              }`}
+            >
+              {/* Text */}
+              <div className={isReversed ? "lg:[direction:ltr]" : ""}>
+                <h2 className="font-heading text-2xl font-bold uppercase tracking-tight lg:text-3xl">
+                  {service.title}
+                </h2>
+                <p className="mt-4 max-w-lg leading-relaxed text-muted-foreground">
+                  {service.description}
+                </p>
+              </div>
+
+              {/* Gallery */}
+              <div className={`grid gap-3 ${service.galleryAlts.length > 2 ? "grid-cols-2" : "grid-cols-1"} ${isReversed ? "lg:[direction:ltr]" : ""}`}>
+                {service.galleryAlts.map((alt, i) => (
+                  <div
+                    key={i}
+                    className="flex aspect-[4/3] items-center justify-center rounded-lg border border-border bg-secondary/10"
+                  >
+                    <span className="px-4 text-center text-xs text-muted-foreground">
+                      {alt}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })}
+
+      {/* Bottom CTA */}
+      <section className="bg-secondary text-secondary-foreground">
+        <div className="container mx-auto px-4 py-16 text-center lg:px-8 lg:py-20">
+          <h2 className="font-heading text-2xl font-bold uppercase tracking-tight lg:text-3xl">
+            Ready to get started? Let's talk.
+          </h2>
+          <div className="mt-8">
+            <Button
+              asChild
+              className="bg-primary font-heading text-sm uppercase tracking-widest text-primary-foreground hover:bg-primary/90"
+              size="lg"
+            >
+              <Link to="/contact">Contact Us</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+};
+
+export default Services;
