@@ -3,11 +3,20 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import mediaWall1 from "@/assets/media-wall-1.jpg";
+import mediaWall2 from "@/assets/media-wall-2.jpg";
+import mediaWall3 from "@/assets/media-wall-3.png";
+import mediaWall4 from "@/assets/media-wall-4.jpg";
+
+interface GalleryItem {
+  alt: string;
+  src?: string;
+}
 
 interface ServiceSection {
   title: string;
   description: string;
-  galleryAlts: string[];
+  gallery: GalleryItem[];
 }
 
 const serviceSections: ServiceSection[] = [
@@ -15,58 +24,58 @@ const serviceSections: ServiceSection[] = [
     title: "Garage Door Services",
     description:
       "From installations to repairs and opener replacements, garage doors are our specialty. We get it done right the first time.",
-    galleryAlts: [
-      "Garage door track repair in progress",
-      "Chamberlain garage door opener installation",
-      "Triple garage door exterior view",
+    gallery: [
+      { alt: "Garage door track repair in progress" },
+      { alt: "Chamberlain garage door opener installation" },
+      { alt: "Triple garage door exterior view" },
     ],
   },
   {
     title: "Media Wall Designs",
     description:
       "Custom built-in entertainment walls crafted with precision, lighting, and detail that transforms any living space.",
-    galleryAlts: [
-      "Black and gold geometric fireplace media wall",
-      "White built-in entertainment center",
-      "Luxury niche shelving wall design",
-      "Marble and wood slat media wall with LED lighting",
+    gallery: [
+      { alt: "White built-in entertainment center with fireplace", src: mediaWall1 },
+      { alt: "White built-in media wall with black slat backing", src: mediaWall2 },
+      { alt: "Marble and wood slat media wall with LED lighting", src: mediaWall3 },
+      { alt: "Custom built-in entertainment center in progress", src: mediaWall4 },
     ],
   },
   {
     title: "Kitchen Renovation",
     description:
       "Full kitchen upgrades including cabinets, countertops, backsplash, and more — built to last and designed to impress.",
-    galleryAlts: [
-      "Marble countertop kitchen renovation in progress",
-      "Completed blue island kitchen renovation",
-      "White two-tone cabinet kitchen",
+    gallery: [
+      { alt: "Marble countertop kitchen renovation in progress" },
+      { alt: "Completed blue island kitchen renovation" },
+      { alt: "White two-tone cabinet kitchen" },
     ],
   },
   {
     title: "Accent Walls",
     description:
       "Decorative feature walls that add character, depth, and a custom feel to any room.",
-    galleryAlts: [
-      "Black and gold accent wall close-up",
-      "Decorative accent wall detail",
+    gallery: [
+      { alt: "Black and gold accent wall close-up" },
+      { alt: "Decorative accent wall detail" },
     ],
   },
   {
     title: "Flooring & Carpet Removal",
     description:
       "LVP, hardwood, tile installation, and full carpet removal. Clean, level, and built to last.",
-    galleryAlts: [
-      "LVP flooring installation in progress",
-      "Completed dark hardwood flooring",
+    gallery: [
+      { alt: "LVP flooring installation in progress" },
+      { alt: "Completed dark hardwood flooring" },
     ],
   },
   {
     title: "In-House Painting",
     description:
       "Interior painting done clean, precise, and with care — walls, cabinets, trim, and more.",
-    galleryAlts: [
-      "Freshly painted kitchen cabinets",
-      "Cabinet painting detail work",
+    gallery: [
+      { alt: "Freshly painted kitchen cabinets" },
+      { alt: "Cabinet painting detail work" },
     ],
   },
 ];
@@ -119,15 +128,21 @@ const Services = () => {
               </div>
 
               {/* Gallery */}
-              <div className={`grid gap-3 ${service.galleryAlts.length > 2 ? "grid-cols-2" : "grid-cols-1"} ${isReversed ? "lg:[direction:ltr]" : ""}`}>
-                {service.galleryAlts.map((alt, i) => (
+              <div className={`grid gap-3 ${service.gallery.length > 2 ? "grid-cols-2" : "grid-cols-1"} ${isReversed ? "lg:[direction:ltr]" : ""}`}>
+                {service.gallery.map((item, i) => (
                   <div
                     key={i}
-                    className="flex aspect-[4/3] items-center justify-center rounded-lg border border-border bg-secondary/10"
+                    className="overflow-hidden rounded-lg border border-border bg-secondary/10 aspect-[4/3]"
                   >
-                    <span className="px-4 text-center text-xs text-muted-foreground">
-                      {alt}
-                    </span>
+                    {item.src ? (
+                      <img src={item.src} alt={item.alt} className="h-full w-full object-cover" />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center">
+                        <span className="px-4 text-center text-xs text-muted-foreground">
+                          {item.alt}
+                        </span>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
