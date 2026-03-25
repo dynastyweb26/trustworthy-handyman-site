@@ -73,9 +73,9 @@ const serviceSections: ServiceSection[] = [
     title: "In-House Painting",
     description:
       "Interior painting done clean, precise, and with care — walls, cabinets, trim, and more.",
-    galleryAlts: [
-      "Freshly painted kitchen cabinets",
-      "Cabinet painting detail work",
+    gallery: [
+      { alt: "Freshly painted kitchen cabinets" },
+      { alt: "Cabinet painting detail work" },
     ],
   },
 ];
