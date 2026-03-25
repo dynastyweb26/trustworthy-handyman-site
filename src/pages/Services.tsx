@@ -10,6 +10,9 @@ import mediaWall4 from "@/assets/media-wall-4.jpg";
 import garageDoor1 from "@/assets/garage-door-1.png";
 import garageDoor2 from "@/assets/garage-door-2.png";
 import garageDoor3 from "@/assets/garage-door-3.png";
+import kitchen1 from "@/assets/kitchen-1.jpg";
+import kitchen2 from "@/assets/kitchen-2.jpg";
+import kitchen3 from "@/assets/kitchen-3.jpg";
 
 interface GalleryItem {
   alt: string;
@@ -49,9 +52,9 @@ const serviceSections: ServiceSection[] = [
     description:
       "Full kitchen upgrades including cabinets, countertops, backsplash, and more — built to last and designed to impress.",
     gallery: [
-      { alt: "Marble countertop kitchen renovation in progress" },
-      { alt: "Completed blue island kitchen renovation" },
-      { alt: "White two-tone cabinet kitchen" },
+      { alt: "Marble countertop kitchen renovation in progress", src: kitchen1 },
+      { alt: "Completed blue island kitchen renovation", src: kitchen2 },
+      { alt: "White two-tone cabinet kitchen", src: kitchen3 },
     ],
   },
   {
