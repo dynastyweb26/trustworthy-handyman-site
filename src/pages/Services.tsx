@@ -28,9 +28,9 @@ const serviceSections: ServiceSection[] = [
     description:
       "From installations to repairs and opener replacements, garage doors are our specialty. We get it done right the first time.",
     gallery: [
-      { alt: "Garage door track repair in progress" },
-      { alt: "Chamberlain garage door opener installation" },
-      { alt: "Triple garage door exterior view" },
+      { alt: "Rustic wooden garage door with iron hardware", src: garageDoor1 },
+      { alt: "White panel garage door installation", src: garageDoor2 },
+      { alt: "Dark garage door with window panels", src: garageDoor3 },
     ],
   },
   {
