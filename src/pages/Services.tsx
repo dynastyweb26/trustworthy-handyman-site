@@ -10,6 +10,9 @@ import mediaWall4 from "@/assets/media-wall-4.jpg";
 import garageDoor1 from "@/assets/garage-door-1.png";
 import garageDoor2 from "@/assets/garage-door-2.png";
 import garageDoor3 from "@/assets/garage-door-3.png";
+import kitchen1 from "@/assets/kitchen-1.jpg";
+import kitchen2 from "@/assets/kitchen-2.jpg";
+import kitchen3 from "@/assets/kitchen-3.jpg";
 
 interface GalleryItem {
   alt: string;
