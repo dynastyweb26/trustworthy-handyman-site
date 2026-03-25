@@ -55,9 +55,9 @@ const serviceSections: ServiceSection[] = [
     title: "Accent Walls",
     description:
       "Decorative feature walls that add character, depth, and a custom feel to any room.",
-    galleryAlts: [
-      "Black and gold accent wall close-up",
-      "Decorative accent wall detail",
+    gallery: [
+      { alt: "Black and gold accent wall close-up" },
+      { alt: "Decorative accent wall detail" },
     ],
   },
   {
