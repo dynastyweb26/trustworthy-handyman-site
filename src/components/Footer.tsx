@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -8,8 +9,11 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-3 md:items-center">
           {/* Logo */}
           <div className="flex flex-col items-center md:items-start">
-            <Link to="/" className="font-heading text-xl font-bold uppercase tracking-wider">
-              Smart Handyman
+            <Link to="/" className="flex items-center gap-3">
+              <img src={logo} alt="Smart Handyman logo" className="h-10 w-10 brightness-0 invert" />
+              <span className="font-heading text-xl font-bold uppercase tracking-wider">
+                Smart Handyman
+              </span>
             </Link>
           </div>
 
