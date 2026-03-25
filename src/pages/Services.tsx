@@ -3,6 +3,10 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import mediaWall1 from "@/assets/media-wall-1.jpg";
+import mediaWall2 from "@/assets/media-wall-2.jpg";
+import mediaWall3 from "@/assets/media-wall-3.png";
+import mediaWall4 from "@/assets/media-wall-4.jpg";
 
 interface ServiceSection {
   title: string;
