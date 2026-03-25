@@ -7,6 +7,9 @@ import mediaWall1 from "@/assets/media-wall-1.jpg";
 import mediaWall2 from "@/assets/media-wall-2.jpg";
 import mediaWall3 from "@/assets/media-wall-3.png";
 import mediaWall4 from "@/assets/media-wall-4.jpg";
+import garageDoor1 from "@/assets/garage-door-1.png";
+import garageDoor2 from "@/assets/garage-door-2.png";
+import garageDoor3 from "@/assets/garage-door-3.png";
 
 interface GalleryItem {
   alt: string;
