@@ -18,11 +18,10 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-4 py-3 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
-          <div className="flex items-center gap-2">
-            <span className="font-heading text-xl font-bold uppercase tracking-wider text-secondary-foreground">
-              Smart Handyman
-            </span>
-          </div>
+          <img src={logo} alt="Smart Handyman logo" className="h-10 w-10 brightness-0 invert" />
+          <span className="font-heading text-xl font-bold uppercase tracking-wider text-secondary-foreground">
+            Smart Handyman
+          </span>
         </Link>
 
         {/* Desktop Nav */}
