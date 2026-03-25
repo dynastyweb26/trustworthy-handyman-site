@@ -7,6 +7,9 @@ import mediaWall1 from "@/assets/media-wall-1.jpg";
 import mediaWall2 from "@/assets/media-wall-2.jpg";
 import mediaWall3 from "@/assets/media-wall-3.png";
 import mediaWall4 from "@/assets/media-wall-4.jpg";
+import garageDoor1 from "@/assets/garage-door-1.png";
+import garageDoor2 from "@/assets/garage-door-2.png";
+import garageDoor3 from "@/assets/garage-door-3.png";
 
 interface GalleryItem {
   alt: string;
@@ -25,9 +28,9 @@ const serviceSections: ServiceSection[] = [
     description:
       "From installations to repairs and opener replacements, garage doors are our specialty. We get it done right the first time.",
     gallery: [
-      { alt: "Garage door track repair in progress" },
-      { alt: "Chamberlain garage door opener installation" },
-      { alt: "Triple garage door exterior view" },
+      { alt: "Rustic wooden garage door with iron hardware", src: garageDoor1 },
+      { alt: "White panel garage door installation", src: garageDoor2 },
+      { alt: "Dark garage door with window panels", src: garageDoor3 },
     ],
   },
   {
