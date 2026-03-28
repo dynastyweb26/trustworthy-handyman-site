@@ -41,12 +41,12 @@ const badges = [
 ];
 
 const galleryPlaceholders = [
-  { alt: "Garage door installation by Smart Handyman" },
-  { alt: "Custom media wall design with LED lighting" },
-  { alt: "Kitchen renovation with marble countertops" },
-  { alt: "Black and gold accent wall" },
-  { alt: "LVP flooring installation" },
-  { alt: "Interior cabinet painting" },
+  { alt: "Garage door installation by Smart Handyman", src: gallery1 },
+  { alt: "Custom media wall design with LED lighting", src: gallery2 },
+  { alt: "Kitchen renovation with marble countertops", src: gallery3 },
+  { alt: "Black and gold accent wall", src: gallery4 },
+  { alt: "LVP flooring installation", src: gallery5 },
+  { alt: "Overhead garage storage rack installation", src: gallery6 },
 ];
 
 const Index = () => {
