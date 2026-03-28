@@ -17,6 +17,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import { Button } from "@/components/ui/button";
+import gallery1 from "@/assets/gallery-1.png";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.png";
+import gallery4 from "@/assets/gallery-4.jpg";
+import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
 
 const services = [
   { icon: Wrench, title: "Garage Door Services", desc: "Installations, repairs & opener replacements — our specialty." },
@@ -35,12 +41,12 @@ const badges = [
 ];
 
 const galleryPlaceholders = [
-  { alt: "Garage door installation by Smart Handyman" },
-  { alt: "Custom media wall design with LED lighting" },
-  { alt: "Kitchen renovation with marble countertops" },
-  { alt: "Black and gold accent wall" },
-  { alt: "LVP flooring installation" },
-  { alt: "Interior cabinet painting" },
+  { alt: "Garage door installation by Smart Handyman", src: gallery1 },
+  { alt: "Custom media wall design with LED lighting", src: gallery2 },
+  { alt: "Kitchen renovation with marble countertops", src: gallery3 },
+  { alt: "Black and gold accent wall", src: gallery4 },
+  { alt: "LVP flooring installation", src: gallery5 },
+  { alt: "Overhead garage storage rack installation", src: gallery6 },
 ];
 
 const Index = () => {
@@ -179,9 +185,9 @@ const Index = () => {
             {galleryPlaceholders.map((item, i) => (
               <div
                 key={i}
-                className="flex aspect-[4/3] items-center justify-center rounded-lg bg-secondary/10 border border-border"
+                className="aspect-[4/3] overflow-hidden rounded-lg border border-border"
               >
-                <span className="px-4 text-center text-xs text-muted-foreground">{item.alt}</span>
+                <img src={item.src} alt={item.alt} className="h-full w-full object-cover" />
               </div>
             ))}
           </div>
