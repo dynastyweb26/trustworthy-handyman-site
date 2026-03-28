@@ -75,8 +75,8 @@ const serviceSections: ServiceSection[] = [
     description:
       "LVP, hardwood, tile installation, and full carpet removal. Clean, level, and built to last.",
     gallery: [
-      { alt: "LVP flooring installation in progress" },
-      { alt: "Completed dark hardwood flooring" },
+      { alt: "LVP flooring installation in progress", src: flooring1 },
+      { alt: "Completed dark hardwood flooring", src: flooring2 },
     ],
   },
   {
