@@ -138,7 +138,7 @@ const Index = () => {
 
       {/* Trust Badges */}
       <section className="bg-foreground">
-        <div className="container mx-auto grid grid-cols-2 gap-6 px-4 py-10 md:grid-cols-4 lg:px-8">
+        <div className="container mx-auto flex flex-wrap items-center justify-center gap-10 px-4 py-10 md:gap-16 lg:px-8">
           {badges.map((badge) => (
             <div key={badge.label} className="flex flex-col items-center gap-3 text-center">
               <badge.icon className="text-primary" size={32} />
