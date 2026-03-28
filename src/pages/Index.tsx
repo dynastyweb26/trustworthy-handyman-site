@@ -185,9 +185,9 @@ const Index = () => {
             {galleryPlaceholders.map((item, i) => (
               <div
                 key={i}
-                className="flex aspect-[4/3] items-center justify-center rounded-lg bg-secondary/10 border border-border"
+                className="aspect-[4/3] overflow-hidden rounded-lg border border-border"
               >
-                <span className="px-4 text-center text-xs text-muted-foreground">{item.alt}</span>
+                <img src={item.src} alt={item.alt} className="h-full w-full object-cover" />
               </div>
             ))}
           </div>
