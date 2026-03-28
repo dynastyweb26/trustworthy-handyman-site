@@ -15,6 +15,8 @@ import kitchen2 from "@/assets/kitchen-2.jpg";
 import kitchen3 from "@/assets/kitchen-3.jpg";
 import accentWall1 from "@/assets/accent-wall-1.jpg";
 import accentWall2 from "@/assets/accent-wall-2.jpg";
+import flooring1 from "@/assets/flooring-1.jpg";
+import flooring2 from "@/assets/flooring-2.jpg";
 
 interface GalleryItem {
   alt: string;
@@ -73,8 +75,8 @@ const serviceSections: ServiceSection[] = [
     description:
       "LVP, hardwood, tile installation, and full carpet removal. Clean, level, and built to last.",
     gallery: [
-      { alt: "LVP flooring installation in progress" },
-      { alt: "Completed dark hardwood flooring" },
+      { alt: "LVP flooring installation in progress", src: flooring1 },
+      { alt: "Completed dark hardwood flooring", src: flooring2 },
     ],
   },
   {
