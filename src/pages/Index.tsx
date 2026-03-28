@@ -153,7 +153,7 @@ const Index = () => {
       {/* Services Preview */}
       <section className="bg-background">
         <div className="container mx-auto px-4 py-16 lg:px-8 lg:py-24">
-          <h2 className="mb-12 text-center font-heading text-3xl font-bold uppercase tracking-tight lg:text-4xl">OUR CRAFT
+          <h2 className="mb-12 text-center font-heading text-3xl font-bold uppercase tracking-tight lg:text-4xl">What we do  
 
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
