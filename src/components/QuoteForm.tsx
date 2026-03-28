@@ -48,26 +48,25 @@ const QuoteForm = ({ submitLabel = "Request a Quote", darkMode = false }: QuoteF
 
     try {
       await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_mczon4u",
+        "template_oen7jhq",
         {
-          from_name: form.name,
+          name: form.name,
           phone: form.phone,
           city: form.city,
           service: form.service,
           message: form.message,
-        },
-        "YOUR_PUBLIC_KEY"
+        }
       );
       toast({
-        title: "Quote Requested!",
-        description: "We'll get back to you promptly.",
+        title: "Your request has been sent!",
+        description: "We'll be in touch soon.",
       });
       setForm({ name: "", phone: "", city: "", service: "", message: "" });
     } catch {
       toast({
         title: "Something went wrong",
-        description: "Please try again or call us directly.",
+        description: "Please call us at 945-344-4580.",
         variant: "destructive",
       });
     } finally {
