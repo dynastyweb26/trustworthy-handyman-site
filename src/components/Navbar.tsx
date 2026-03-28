@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { label: "Home", path: "/" },
-  { label: "Services", path: "/services" },
-  { label: "Contact", path: "/contact" },
-];
+{ label: "Home", path: "/" },
+{ label: "Services", path: "/services" },
+{ label: "Contact", path: "/contact" }];
+
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-4 py-3 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Smart Handyman logo" className="h-10 w-10 brightness-0 invert" />
+          <img alt="Smart Handyman logo" className="h-10 w-10 brightness-0 invert" src="/lovable-uploads/8f7a2d45-bdbd-457d-9915-e3eedadba194.png" />
           <span className="font-heading text-xl font-bold uppercase tracking-wider text-secondary-foreground">
             Smart Handyman
           </span>
@@ -26,56 +26,56 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <ul className="hidden items-center gap-8 md:flex">
-          {navLinks.map((link) => (
-            <li key={link.path}>
+          {navLinks.map((link) =>
+          <li key={link.path}>
               <Link
-                to={link.path}
-                className={`font-heading text-sm font-medium uppercase tracking-widest transition-colors hover:text-primary ${
-                  location.pathname === link.path
-                    ? "text-primary"
-                    : "text-secondary-foreground"
-                }`}
-              >
+              to={link.path}
+              className={`font-heading text-sm font-medium uppercase tracking-widest transition-colors hover:text-primary ${
+              location.pathname === link.path ?
+              "text-primary" :
+              "text-secondary-foreground"}`
+              }>
+              
                 {link.label}
               </Link>
             </li>
-          ))}
+          )}
         </ul>
 
         {/* Mobile Hamburger */}
         <button
           className="text-secondary-foreground md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle navigation menu"
-        >
+          aria-label="Toggle navigation menu">
+          
           {mobileOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
       {/* Mobile Menu */}
-      {mobileOpen && (
-        <div className="border-t border-secondary-foreground/10 bg-secondary md:hidden">
+      {mobileOpen &&
+      <div className="border-t border-secondary-foreground/10 bg-secondary md:hidden">
           <ul className="flex flex-col items-center gap-4 py-6">
-            {navLinks.map((link) => (
-              <li key={link.path}>
+            {navLinks.map((link) =>
+          <li key={link.path}>
                 <Link
-                  to={link.path}
-                  onClick={() => setMobileOpen(false)}
-                  className={`font-heading text-lg font-medium uppercase tracking-widest transition-colors hover:text-primary ${
-                    location.pathname === link.path
-                      ? "text-primary"
-                      : "text-secondary-foreground"
-                  }`}
-                >
+              to={link.path}
+              onClick={() => setMobileOpen(false)}
+              className={`font-heading text-lg font-medium uppercase tracking-widest transition-colors hover:text-primary ${
+              location.pathname === link.path ?
+              "text-primary" :
+              "text-secondary-foreground"}`
+              }>
+              
                   {link.label}
                 </Link>
               </li>
-            ))}
+          )}
           </ul>
         </div>
-      )}
-    </nav>
-  );
+      }
+    </nav>);
+
 };
 
 export default Navbar;
