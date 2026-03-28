@@ -15,6 +15,8 @@ import kitchen2 from "@/assets/kitchen-2.jpg";
 import kitchen3 from "@/assets/kitchen-3.jpg";
 import accentWall1 from "@/assets/accent-wall-1.jpg";
 import accentWall2 from "@/assets/accent-wall-2.jpg";
+import flooring1 from "@/assets/flooring-1.jpg";
+import flooring2 from "@/assets/flooring-2.jpg";
 
 interface GalleryItem {
   alt: string;
