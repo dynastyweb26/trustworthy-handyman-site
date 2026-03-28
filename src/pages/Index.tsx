@@ -34,7 +34,6 @@ const services = [
 ];
 
 const badges = [
-  { icon: Shield, label: "Licensed & Insured" },
   { icon: MapPin, label: "Faithfully Serving Texas" },
   { icon: Award, label: "Quality Guaranteed" },
   { icon: ThumbsUp, label: "No Job Too Small" },
