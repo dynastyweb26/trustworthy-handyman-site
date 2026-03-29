@@ -163,7 +163,7 @@ const Services = () => {
       <section className="bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4 py-16 text-center lg:px-8 lg:py-20">
           <h2 className="font-heading text-2xl font-bold uppercase tracking-tight lg:text-3xl">
-            Need an affordable, experienced handyman in East Texas or North Texas? Let's talk — get your free quote today.
+            Let's talk — get your free quote today.
           </h2>
           <div className="mt-8">
             <Button
