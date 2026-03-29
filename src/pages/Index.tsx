@@ -107,7 +107,7 @@ const Index = () => {
               Faithfully Serving Texas
             </p>
             <p className="max-w-md text-base leading-relaxed text-secondary-foreground/80">
-              Looking for a trusted handyman near you in East Texas or North Texas? Crazy Door delivers affordable, experienced home improvement services — from garage door repair and opener installation to kitchen renovation, LVP flooring, cabinet painting, and interior painting. Serving Sulphur Springs, Dallas, Tyler, Longview, Rockwall, Greenville, McKinney, Fort Worth and surrounding areas. Get a free quote today.
+              Looking for a trusted handyman near you in Texas? Crazy Door delivers affordable, experienced home improvement services
             </p>
             <div>
               <Button
