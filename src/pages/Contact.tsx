@@ -8,10 +8,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Smart Handyman — Texas</title>
+        <title>Get a Free Quote | Crazy Door — Trusted Handyman Serving East Texas & North Texas</title>
         <meta
           name="description"
-          content="Get a free quote from Smart Handyman. We offer garage door services, kitchen renovations, media walls, flooring, and painting across Texas."
+          content="Contact Crazy Door for a free quote. Affordable, experienced, and licensed handyman services in Sulphur Springs, Dallas, Fort Worth, Rockwall, McKinney, Greenville and all of Texas. Same day service available."
         />
       </Helmet>
       <Navbar />
@@ -37,7 +37,7 @@ const Contact = () => {
               Get in Touch
             </h2>
             <p className="max-w-md leading-relaxed text-muted-foreground">
-              Whether you need a garage door repair, a kitchen renovation, or a fresh coat of paint — we're here to help. Reach out and let's get your project started.
+              Whether you need same day garage door repair, a kitchen renovation, LVP flooring, or a fresh coat of paint — Crazy Door is your trusted local handyman serving Sulphur Springs, Dallas, Tyler, Fort Worth, Rockwall, McKinney, Greenville, Longview and all of East Texas and North Texas. Reach out for a free quote.
             </p>
             <div className="flex flex-col gap-5">
               <a
@@ -53,7 +53,7 @@ const Contact = () => {
                 </div>
               </a>
               <a
-                href="mailto:smartworkhandyman@gmail.com"
+                href="mailto:crazydoor04@gmail.com"
                 className="flex items-center gap-4 text-foreground transition-colors hover:text-primary"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground">Email</p>
-                  <p className="font-semibold">smartworkhandyman@gmail.com</p>
+                  <p className="font-semibold">crazydoor04@gmail.com</p>
                 </div>
               </a>
               <div className="flex items-center gap-4">

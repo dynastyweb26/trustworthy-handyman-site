@@ -33,7 +33,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "Garage Door Services",
     description:
-      "From installations to repairs and opener replacements, garage doors are our specialty. We get it done right the first time.",
+      "From garage door repair to full installations and opener replacement — garage doors are our specialty. Same day service available across Sulphur Springs, Tyler, Longview, and East Texas. Get a free quote today.",
     gallery: [
       { alt: "Rustic wooden garage door with iron hardware", src: garageDoor1 },
       { alt: "White panel garage door installation", src: garageDoor2 },
@@ -43,7 +43,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "Media Wall Designs",
     description:
-      "Custom built-in entertainment walls crafted with precision, lighting, and detail that transforms any living space.",
+      "Custom entertainment walls and built-in shelving crafted with precision and care. We transform living spaces across Dallas, Fort Worth, McKinney, Rockwall and North Texas.",
     gallery: [
       { alt: "White built-in entertainment center with fireplace", src: mediaWall1 },
       { alt: "White built-in media wall with black slat backing", src: mediaWall2 },
@@ -54,7 +54,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "Kitchen Renovation",
     description:
-      "Full kitchen upgrades including cabinets, countertops, backsplash, and more — built to last and designed to impress.",
+      "Full kitchen renovation including cabinets, countertops, tile installation, and backsplash. Affordable home improvement done right — serving East Texas and North Texas homeowners.",
     gallery: [
       { alt: "Marble countertop kitchen renovation in progress", src: kitchen1 },
       { alt: "Completed blue island kitchen renovation", src: kitchen2 },
@@ -64,7 +64,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "Accent Walls",
     description:
-      "Decorative feature walls that add character, depth, and a custom feel to any room.",
+      "Decorative accent walls and home decor features that add character and depth to any room. Trusted handyman work across Sulphur Springs, Greenville, and surrounding areas.",
     gallery: [
       { alt: "Red LED marble slat accent wall", src: accentWall1 },
       { alt: "Black and gold geometric accent wall with lighting", src: accentWall2 },
@@ -73,7 +73,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "Flooring & Carpet Removal",
     description:
-      "LVP, hardwood, tile installation, and full carpet removal. Clean, level, and built to last.",
+      "LVP flooring installation, tile installation, hardwood, and full carpet removal. Experienced, affordable flooring services across East Texas and North Texas.",
     gallery: [
       { alt: "LVP flooring installation in progress", src: flooring1 },
       { alt: "Completed dark hardwood flooring", src: flooring2 },
@@ -82,7 +82,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "In-House Painting",
     description:
-      "Interior painting done clean, precise, and with care — walls, cabinets, trim, and more.",
+      "Interior painting and cabinet painting done clean and precise. Your local handyman for walls, trim, and more — serving Dallas, Tyler, Longview, McKinney and all of Texas.",
     gallery: [
       { alt: "Freshly painted kitchen cabinets" },
       { alt: "Cabinet painting detail work" },
@@ -94,10 +94,10 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Our Services | Smart Handyman — Texas</title>
+        <title>Handyman Services Near Me | Garage Door Repair, Renovation & Home Improvement — Crazy Door Texas</title>
         <meta
           name="description"
-          content="Smart Handyman provides garage door services, media wall designs, kitchen renovation, accent walls, flooring, and interior painting across Texas."
+          content="From garage door repair and opener installation to kitchen renovation, custom entertainment walls, built-in shelving, LVP flooring, tile installation, and interior painting — Crazy Door is the best handyman in East Texas, Dallas, Tyler, Longview and surrounding areas."
         />
       </Helmet>
       <Navbar />
@@ -109,7 +109,7 @@ const Services = () => {
             Our Services
           </h1>
           <p className="mt-4 text-base text-secondary-foreground/70">
-            Honest work. Quality results. Faithfully serving Texas.
+            Honest work. Quality results. Your trusted, affordable handyman faithfully serving Sulphur Springs, East Texas, Dallas, and all of North Texas.
           </p>
         </div>
       </section>
@@ -127,7 +127,6 @@ const Services = () => {
                 isReversed ? "lg:[direction:rtl]" : ""
               }`}
             >
-              {/* Text */}
               <div className={isReversed ? "lg:[direction:ltr]" : ""}>
                 <h2 className="font-heading text-2xl font-bold uppercase tracking-tight lg:text-3xl">
                   {service.title}
@@ -137,7 +136,6 @@ const Services = () => {
                 </p>
               </div>
 
-              {/* Gallery */}
               <div className={`grid gap-3 ${service.gallery.length > 2 ? "grid-cols-2" : "grid-cols-1"} ${isReversed ? "lg:[direction:ltr]" : ""}`}>
                 {service.gallery.map((item, i) => (
                   <div
@@ -165,7 +163,7 @@ const Services = () => {
       <section className="bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4 py-16 text-center lg:px-8 lg:py-20">
           <h2 className="font-heading text-2xl font-bold uppercase tracking-tight lg:text-3xl">
-            Ready to get started? Let's talk.
+            Need an affordable, experienced handyman in East Texas or North Texas? Let's talk — get your free quote today.
           </h2>
           <div className="mt-8">
             <Button
