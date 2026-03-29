@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { label: "Home", path: "/" },
-  { label: "Services", path: "/services" },
-  { label: "Contact", path: "/contact" },
-];
+{ label: "Home", path: "/" },
+{ label: "Services", path: "/services" },
+{ label: "Contact", path: "/contact" }];
+
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -15,59 +15,59 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-secondary">
-      <div className="container mx-auto flex items-center justify-between px-4 py-3 lg:px-8 text-primary bg-secondary">
+      <div className="container mx-auto flex items-center justify-between px-4 py-3 lg:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <img alt="Crazy Door logo" className="h-12 w-12 object-cover bg-transparent" style={{ filter: 'brightness(0) invert(1)' }} src="/lovable-uploads/d8ba6d03-a5cd-4c3e-b179-a8a4eac0f30f.png" />
+          <img alt="Crazy Door logo" className="h-10 w-10 brightness-0 invert object-fill" src="/lovable-uploads/624afada-fca2-4af1-aa77-4ffed71a346f.png" />
           <span className="font-heading text-xl font-bold uppercase tracking-wider text-secondary-foreground">
             Crazy Door
           </span>
         </Link>
 
         <ul className="hidden items-center gap-8 md:flex">
-          {navLinks.map((link) => (
-            <li key={link.path}>
+          {navLinks.map((link) =>
+          <li key={link.path}>
               <Link
-                to={link.path}
-                className={`font-heading text-sm font-medium uppercase tracking-widest transition-colors hover:text-primary ${
-                  location.pathname === link.path ? "text-primary" : "text-secondary-foreground"
-                }`}
-              >
+              to={link.path}
+              className={`font-heading text-sm font-medium uppercase tracking-widest transition-colors hover:text-primary ${
+              location.pathname === link.path ? "text-primary" : "text-secondary-foreground"}`
+              }>
+              
                 {link.label}
               </Link>
             </li>
-          ))}
+          )}
         </ul>
 
         <button
           className="text-secondary-foreground md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle navigation menu"
-        >
+          aria-label="Toggle navigation menu">
+          
           {mobileOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {mobileOpen && (
-        <div className="border-t border-secondary-foreground/10 bg-secondary md:hidden">
+      {mobileOpen &&
+      <div className="border-t border-secondary-foreground/10 bg-secondary md:hidden">
           <ul className="flex flex-col items-center gap-4 py-6">
-            {navLinks.map((link) => (
-              <li key={link.path}>
+            {navLinks.map((link) =>
+          <li key={link.path}>
                 <Link
-                  to={link.path}
-                  onClick={() => setMobileOpen(false)}
-                  className={`font-heading text-lg font-medium uppercase tracking-widest transition-colors hover:text-primary ${
-                    location.pathname === link.path ? "text-primary" : "text-secondary-foreground"
-                  }`}
-                >
+              to={link.path}
+              onClick={() => setMobileOpen(false)}
+              className={`font-heading text-lg font-medium uppercase tracking-widest transition-colors hover:text-primary ${
+              location.pathname === link.path ? "text-primary" : "text-secondary-foreground"}`
+              }>
+              
                   {link.label}
                 </Link>
               </li>
-            ))}
+          )}
           </ul>
         </div>
-      )}
-    </nav>
-  );
+      }
+    </nav>);
+
 };
 
 export default Navbar;
