@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-secondary">
       <div className="container mx-auto flex items-center justify-between px-4 py-3 lg:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <img alt="Crazy Door logo" className="h-10 w-10 brightness-0 invert" src="/lovable-uploads/115143c3-a900-4842-a27d-c92ff4a3e9f2.png" />
+          <img alt="Crazy Door logo" className="h-10 w-10 brightness-0 invert object-fill" src="/lovable-uploads/115143c3-a900-4842-a27d-c92ff4a3e9f2.png" />
           <span className="font-heading text-xl font-bold uppercase tracking-wider text-secondary-foreground">
             Crazy Door
           </span>
