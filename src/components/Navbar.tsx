@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-secondary">
       <div className="container mx-auto flex items-center justify-between px-4 py-3 lg:px-8 text-primary bg-secondary">
         <Link to="/" className="flex items-center gap-3">
-          <img alt="Crazy Door logo" className="h-12 w-12 object-cover bg-transparent" style={{ filter: 'brightness(0) saturate(100%) invert(27%) sepia(99%) saturate(700%) hue-rotate(340deg)' }} src="/lovable-uploads/d8ba6d03-a5cd-4c3e-b179-a8a4eac0f30f.png" />
+          <img alt="Crazy Door logo" className="h-12 w-12 object-cover bg-transparent" style={{ filter: 'brightness(0) invert(1)' }} src="/lovable-uploads/d8ba6d03-a5cd-4c3e-b179-a8a4eac0f30f.png" />
           <span className="font-heading text-xl font-bold uppercase tracking-wider text-secondary-foreground">
             Crazy Door
           </span>
