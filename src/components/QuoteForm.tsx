@@ -51,11 +51,12 @@ const QuoteForm = ({ submitLabel = "Request a Quote", darkMode = false }: QuoteF
         "service_jf1zsuw",
         "template_ctxc7u9",
         {
-          name: form.name,
-          phone: form.phone,
+          full_name: form.name,
+          contact_number: form.phone,
           city: form.city,
-          service: form.service,
-          message: form.message,
+          service_needed: form.service,
+          additional_info: form.message,
+          reply_to: form.phone,
         }
       );
       toast({
