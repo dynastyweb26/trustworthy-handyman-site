@@ -9,16 +9,16 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-3 md:items-center">
           <div className="flex flex-col items-center md:items-start">
             <Link to="/" className="flex items-center gap-3">
-              <img src={logo} alt="Crazy Door logo" className="h-10 w-10 brightness-0 invert" />
+              <img src={logo} alt="Cyril Handyman & Door LLC logo" className="h-10 w-10 brightness-0 invert" />
               <span className="font-heading text-xl font-bold uppercase tracking-wider">
-                Crazy Door
+                Cyril Handyman & Door LLC
               </span>
             </Link>
           </div>
 
           <div className="flex flex-col items-center text-center">
             <p className="font-heading text-lg font-semibold uppercase tracking-wide">
-              Crazy Door
+              Cyril Handyman & Door LLC
             </p>
             <p className="mt-1 text-sm text-secondary-foreground/70">
               Working Wholeheartedly for the Lord
@@ -45,7 +45,7 @@ const Footer = () => {
 
         <div className="mt-10 border-t border-secondary-foreground/10 pt-6 text-center">
           <p className="text-xs text-secondary-foreground/50">
-            © 2026 Crazy Door. All rights reserved.
+            © 2026 Cyril Handyman & Door LLC. All rights reserved.
           </p>
         </div>
       </div>

@@ -40,7 +40,7 @@ const badges = [
 ];
 
 const galleryPlaceholders = [
-  { alt: "Garage door installation by Crazy Door", src: gallery1 },
+  { alt: "Garage door installation by Cyril Handyman & Door LLC", src: gallery1 },
   { alt: "Custom media wall design with LED lighting", src: gallery2 },
   { alt: "Kitchen renovation with marble countertops", src: gallery3 },
   { alt: "Black and gold accent wall", src: gallery4 },
@@ -52,10 +52,10 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Crazy Door | Handyman Near Me — Garage Doors, Renovation & Home Improvement — Sulphur Springs, East Texas</title>
+        <title>Cyril Handyman & Door LLC | Handyman Near Me — Garage Doors, Renovation & Home Improvement — Sulphur Springs, East Texas</title>
         <meta
           name="description"
-          content="Crazy Door is your trusted, affordable handyman serving Sulphur Springs, Dallas, Tyler, East Texas and all of North Texas. Garage door repair, kitchen renovation, media walls, accent walls, LVP flooring, cabinet painting and interior painting. Get a free quote today."
+          content="Cyril Handyman & Door LLC is your trusted, affordable handyman serving Sulphur Springs, Dallas, Tyler, East Texas and all of North Texas. Garage door repair, kitchen renovation, media walls, accent walls, LVP flooring, cabinet painting and interior painting. Get a free quote today."
         />
       </Helmet>
       <Navbar />
@@ -98,7 +98,7 @@ const Index = () => {
         <div className="relative container mx-auto grid gap-12 px-4 py-16 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-24">
           <div className="flex flex-col gap-6">
             <h1 className="font-heading text-4xl font-bold uppercase leading-tight tracking-tight lg:text-6xl">
-              Crazy Door — Handyman &amp; Garage Door Services
+              Cyril Handyman & Door LLC — Handyman &amp; Garage Door Services
             </h1>
             <p className="font-heading text-lg font-medium uppercase tracking-wider text-primary">
               Working Wholeheartedly for the Lord
@@ -107,7 +107,7 @@ const Index = () => {
               Faithfully Serving Texas
             </p>
             <p className="max-w-md text-base leading-relaxed text-secondary-foreground/80">
-              Looking for a trusted handyman near you in Texas? Crazy Door delivers affordable, experienced home improvement services
+              Looking for a trusted handyman near you in Texas? Cyril Handyman & Door LLC delivers affordable, experienced home improvement services
             </p>
             <div>
               <Button

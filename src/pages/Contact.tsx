@@ -8,10 +8,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Get a Free Quote | Crazy Door — Trusted Handyman Serving East Texas & North Texas</title>
+        <title>Get a Free Quote | Cyril Handyman & Door LLC — Trusted Handyman Serving East Texas & North Texas</title>
         <meta
           name="description"
-          content="Contact Crazy Door for a free quote. Affordable, experienced, and licensed handyman services in Sulphur Springs, Dallas, Fort Worth, Rockwall, McKinney, Greenville and all of Texas. Same day service available."
+          content="Contact Cyril Handyman & Door LLC for a free quote. Affordable, experienced, and licensed handyman services in Sulphur Springs, Dallas, Fort Worth, Rockwall, McKinney, Greenville and all of Texas. Same day service available."
         />
       </Helmet>
       <Navbar />
@@ -37,7 +37,7 @@ const Contact = () => {
               Get in Touch
             </h2>
             <p className="max-w-md leading-relaxed text-muted-foreground">
-              Whether you need same day garage door repair, a kitchen renovation, LVP flooring, or a fresh coat of paint — Crazy Door is your trusted local handyman serving Sulphur Springs, Dallas, Tyler, Fort Worth, Rockwall, McKinney, Greenville, Longview and all of East Texas and North Texas. Reach out for a free quote.
+              Whether you need same day garage door repair, a kitchen renovation, LVP flooring, or a fresh coat of paint — Cyril Handyman & Door LLC is your trusted local handyman serving Sulphur Springs, Dallas, Tyler, Fort Worth, Rockwall, McKinney, Greenville, Longview and all of East Texas and North Texas. Reach out for a free quote.
             </p>
             <div className="flex flex-col gap-5">
               <a
