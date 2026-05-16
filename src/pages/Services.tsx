@@ -106,7 +106,7 @@ const Services = () => {
       <section className="bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4 py-16 text-center lg:px-8 lg:py-24">
           <h1 className="font-heading text-4xl font-bold uppercase tracking-tight lg:text-5xl">
-            Our Services
+            Handyman &amp; Home Improvement Services
           </h1>
           <p className="mt-4 text-base text-secondary-foreground/70">
             Honest work. Quality results. Your trusted, affordable handyman faithfully serving Sulphur Springs, East Texas, Dallas, and all of North Texas.
