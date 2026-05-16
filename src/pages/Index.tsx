@@ -98,7 +98,7 @@ const Index = () => {
         <div className="relative container mx-auto grid gap-12 px-4 py-16 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-24">
           <div className="flex flex-col gap-6">
             <h1 className="font-heading text-4xl font-bold uppercase leading-tight tracking-tight lg:text-6xl">
-              Cyril Handyman & Door LLC — Handyman &amp; Garage Door Services
+              Cyril Handyman & Door
             </h1>
             <p className="font-heading text-lg font-medium uppercase tracking-wider text-primary">
               Working Wholeheartedly for the Lord
