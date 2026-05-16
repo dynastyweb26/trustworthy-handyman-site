@@ -48,8 +48,8 @@ const QuoteForm = ({ submitLabel = "Request a Quote", darkMode = false }: QuoteF
 
     try {
       await emailjs.send(
-        "service_mczon4u",
-        "template_oen7jhq",
+        "service_jf1zsuw",
+        "template_ctxc7u9",
         {
           name: form.name,
           phone: form.phone,
