@@ -94,10 +94,10 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Handyman Services Near Me | Garage Door Repair, Renovation & Home Improvement — Crazy Door Texas</title>
+        <title>Handyman Services Near Me | Garage Door Repair, Renovation & Home Improvement — Cyril Handyman & Door LLC Texas</title>
         <meta
           name="description"
-          content="From garage door repair and opener installation to kitchen renovation, custom entertainment walls, built-in shelving, LVP flooring, tile installation, and interior painting — Crazy Door is the best handyman in East Texas, Dallas, Tyler, Longview and surrounding areas."
+          content="From garage door repair and opener installation to kitchen renovation, custom entertainment walls, built-in shelving, LVP flooring, tile installation, and interior painting — Cyril Handyman & Door LLC is the best handyman in East Texas, Dallas, Tyler, Longview and surrounding areas."
         />
       </Helmet>
       <Navbar />
