@@ -16,6 +16,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
+import BlindsPromoCard from "@/components/BlindsPromoCard";
 import { Button } from "@/components/ui/button";
 import gallery1 from "@/assets/gallery-1.png";
 import gallery2 from "@/assets/gallery-2.jpg";
@@ -118,6 +119,8 @@ const Index = () => {
                 <Link to="/contact">Get a Free Quote</Link>
               </Button>
             </div>
+
+            <BlindsPromoCard />
           </div>
 
           <div className="rounded-lg border border-secondary-foreground/10 bg-secondary-foreground/5 p-6 lg:p-8">

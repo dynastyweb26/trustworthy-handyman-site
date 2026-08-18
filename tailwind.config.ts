@@ -76,10 +76,25 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "card-in": {
+          "0%": { opacity: "0", transform: "translateY(12px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "shadow-pulse": {
+          "0%, 100%": { boxShadow: "0 24px 48px -12px rgba(0,0,0,0.40)" },
+          "50%": { boxShadow: "0 32px 64px -8px rgba(0,0,0,0.55)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        // Entrance (runs once) + shadow breathing (runs forever), combined so
+        // both keyframe animations play concurrently on the same element.
+        "promo-entrance": "card-in 0.5s ease-out 0.6s both, shadow-pulse 4s ease-in-out 0.6s infinite",
+        // Applied after the entrance finishes, so `transform` is free again
+        // for the hover lift transition instead of being pinned by card-in's
+        // fill-mode.
+        "promo-pulse": "shadow-pulse 4s ease-in-out infinite",
       },
     },
   },
