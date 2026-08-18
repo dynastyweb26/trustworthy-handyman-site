@@ -108,7 +108,7 @@ const Index = () => {
               Faithfully Serving Forney, Mesquite & Rockwall
             </p>
             <p className="max-w-md text-base leading-relaxed text-secondary-foreground/80">
-              Looking for a trusted handyman near you in Texas? Cyril Handyman & Door LLC delivers affordable, experienced home improvement services
+              Looking for a trusted handyman near you in Forney? Cyril Handyman & Door LLC delivers affordable, experienced home improvement services
             </p>
             <div>
               <Button

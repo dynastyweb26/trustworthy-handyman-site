@@ -80,21 +80,28 @@ export default {
           "0%": { opacity: "0", transform: "translateY(12px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
-        "shadow-pulse": {
-          "0%, 100%": { boxShadow: "0 24px 48px -12px rgba(0,0,0,0.40)" },
-          "50%": { boxShadow: "0 32px 64px -8px rgba(0,0,0,0.55)" },
+        // Resting pulse: a subtle scale breathe plus a soft white halo (0
+        // offset, growing blur/spread) layered on top of a black shadow so
+        // the card still lifts off the page, not just glows.
+        "glow-pulse": {
+          "0%, 100%": {
+            boxShadow: "0 24px 48px -12px rgba(0,0,0,0.40), 0 0 0 0 rgba(255,255,255,0)",
+            transform: "scale(1)",
+          },
+          "50%": {
+            boxShadow: "0 28px 52px -10px rgba(0,0,0,0.45), 0 0 30px 6px rgba(255,255,255,0.35)",
+            transform: "scale(1.015)",
+          },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        // Entrance (runs once) + shadow breathing (runs forever), combined so
-        // both keyframe animations play concurrently on the same element.
-        "promo-entrance": "card-in 0.5s ease-out 0.6s both, shadow-pulse 4s ease-in-out 0.6s infinite",
-        // Applied after the entrance finishes, so `transform` is free again
-        // for the hover lift transition instead of being pinned by card-in's
-        // fill-mode.
-        "promo-pulse": "shadow-pulse 4s ease-in-out infinite",
+        // Entrance (runs once). Applied only until it finishes, then removed
+        // entirely so `transform` is free for the hover-lift transition.
+        "promo-entrance": "card-in 0.5s ease-out 0.6s both",
+        // Resting pulse: white-glow variant (shipped).
+        "promo-pulse-glow": "glow-pulse 4s ease-in-out 0.6s infinite",
       },
     },
   },
