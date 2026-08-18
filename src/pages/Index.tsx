@@ -34,7 +34,7 @@ const services = [
 ];
 
 const badges = [
-  { icon: MapPin, label: "Faithfully Serving Texas" },
+  { icon: MapPin, label: "Faithfully Serving Forney & Nearby" },
   { icon: Award, label: "Quality Guaranteed" },
   { icon: ThumbsUp, label: "No Job Too Small" },
 ];
@@ -52,10 +52,10 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Cyril Handyman & Door LLC | Handyman Near Me — Garage Doors, Renovation & Home Improvement — Sulphur Springs, East Texas</title>
+        <title>Cyril Handyman & Door LLC | Handyman Near Me — Garage Doors, Renovation & Home Improvement — Forney, Mesquite & Rockwall</title>
         <meta
           name="description"
-          content="Cyril Handyman & Door LLC is your trusted, affordable handyman serving Sulphur Springs, Dallas, Tyler, East Texas and all of North Texas. Garage door repair, kitchen renovation, media walls, accent walls, LVP flooring, cabinet painting and interior painting. Get a free quote today."
+          content="Cyril Handyman & Door LLC is your trusted, affordable handyman serving Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty. Garage door repair, kitchen renovation, media walls, accent walls, LVP flooring, cabinet painting and interior painting. Get a free quote today."
         />
       </Helmet>
       <Navbar />
@@ -104,7 +104,7 @@ const Index = () => {
               Working Wholeheartedly for the Lord
             </p>
             <p className="text-sm uppercase tracking-widest text-secondary-foreground/60">
-              Faithfully Serving Texas
+              Faithfully Serving Forney, Mesquite & Rockwall
             </p>
             <p className="max-w-md text-base leading-relaxed text-secondary-foreground/80">
               Looking for a trusted handyman near you in Texas? Cyril Handyman & Door LLC delivers affordable, experienced home improvement services
@@ -150,7 +150,7 @@ const Index = () => {
             What We Do
           </h2>
           <p className="mb-12 text-center text-muted-foreground">
-            Your local handyman for garage doors, renovation, home decor, and more across East Texas and North Texas.
+            Your local handyman for garage doors, renovation, home decor, and more across Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty.
           </p>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (

@@ -6,12 +6,16 @@ import logo from "@/assets/logo.png";
 const navLinks = [
 { label: "Home", path: "/" },
 { label: "Services", path: "/services" },
+{ label: "Blinds", path: "/blinds" },
 { label: "Contact", path: "/contact" }];
 
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
+
+  const isActive = (path: string) =>
+    path === "/" ? location.pathname === "/" : location.pathname.startsWith(path);
 
   return (
     <nav className="sticky top-0 z-50 bg-secondary">
@@ -29,7 +33,7 @@ const Navbar = () => {
               <Link
               to={link.path}
               className={`font-heading text-sm font-medium uppercase tracking-widest transition-colors hover:text-primary ${
-              location.pathname === link.path ? "text-primary" : "text-secondary-foreground"}`
+              isActive(link.path) ? "text-primary" : "text-secondary-foreground"}`
               }>
               
                 {link.label}
@@ -56,7 +60,7 @@ const Navbar = () => {
               to={link.path}
               onClick={() => setMobileOpen(false)}
               className={`font-heading text-lg font-medium uppercase tracking-widest transition-colors hover:text-primary ${
-              location.pathname === link.path ? "text-primary" : "text-secondary-foreground"}`
+              isActive(link.path) ? "text-primary" : "text-secondary-foreground"}`
               }>
               
                   {link.label}

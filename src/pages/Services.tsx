@@ -33,7 +33,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "Garage Door Services",
     description:
-      "From garage door repair to full installations and opener replacement — garage doors are our specialty. Same day service available across Sulphur Springs, Tyler, Longview, and East Texas. Get a free quote today.",
+      "From garage door repair to full installations and opener replacement — garage doors are our specialty. Same day service available across Forney, Mesquite, and Rockwall. Get a free quote today.",
     gallery: [
       { alt: "Rustic wooden garage door with iron hardware", src: garageDoor1 },
       { alt: "White panel garage door installation", src: garageDoor2 },
@@ -43,7 +43,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "Media Wall Designs",
     description:
-      "Custom entertainment walls and built-in shelving crafted with precision and care. We transform living spaces across Dallas, Fort Worth, McKinney, Rockwall and North Texas.",
+      "Custom entertainment walls and built-in shelving crafted with precision and care. We transform living spaces throughout Sunnyvale, Heath, and the surrounding Rockwall communities.",
     gallery: [
       { alt: "White built-in entertainment center with fireplace", src: mediaWall1 },
       { alt: "White built-in media wall with black slat backing", src: mediaWall2 },
@@ -54,7 +54,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "Kitchen Renovation",
     description:
-      "Full kitchen renovation including cabinets, countertops, tile installation, and backsplash. Affordable home improvement done right — serving East Texas and North Texas homeowners.",
+      "Full kitchen renovation including cabinets, countertops, tile installation, and backsplash. Affordable home improvement done right — serving Terrell, Kaufman, and Crandall homeowners.",
     gallery: [
       { alt: "Marble countertop kitchen renovation in progress", src: kitchen1 },
       { alt: "Completed blue island kitchen renovation", src: kitchen2 },
@@ -64,7 +64,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "Accent Walls",
     description:
-      "Decorative accent walls and home decor features that add character and depth to any room. Trusted handyman work across Sulphur Springs, Greenville, and surrounding areas.",
+      "Decorative accent walls and home decor features that add character and depth to any room. Trusted handyman work across Forney, Talty, and surrounding areas.",
     gallery: [
       { alt: "Red LED marble slat accent wall", src: accentWall1 },
       { alt: "Black and gold geometric accent wall with lighting", src: accentWall2 },
@@ -73,7 +73,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "Flooring & Carpet Removal",
     description:
-      "LVP flooring installation, tile installation, hardwood, and full carpet removal. Experienced, affordable flooring services across East Texas and North Texas.",
+      "LVP flooring installation, tile installation, hardwood, and full carpet removal. Experienced, affordable flooring services across Mesquite, Sunnyvale, and Rockwall.",
     gallery: [
       { alt: "LVP flooring installation in progress", src: flooring1 },
       { alt: "Completed dark hardwood flooring", src: flooring2 },
@@ -82,7 +82,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "In-House Painting",
     description:
-      "Interior painting and cabinet painting done clean and precise. Your local handyman for walls, trim, and more — serving Dallas, Tyler, Longview, McKinney and all of Texas.",
+      "Interior painting and cabinet painting done clean and precise. Your local handyman for walls, trim, and more — serving Heath, Terrell, and Kaufman homeowners.",
     gallery: [
       { alt: "Freshly painted kitchen cabinets" },
       { alt: "Cabinet painting detail work" },
@@ -94,10 +94,10 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Handyman Services Near Me | Garage Door Repair, Renovation & Home Improvement — Cyril Handyman & Door LLC Texas</title>
+        <title>Handyman Services Near Me | Garage Door Repair, Renovation & Home Improvement — Cyril Handyman & Door LLC Forney, TX</title>
         <meta
           name="description"
-          content="From garage door repair and opener installation to kitchen renovation, custom entertainment walls, built-in shelving, LVP flooring, tile installation, and interior painting — Cyril Handyman & Door LLC is the best handyman in East Texas, Dallas, Tyler, Longview and surrounding areas."
+          content="From garage door repair and opener installation to kitchen renovation, custom entertainment walls, built-in shelving, LVP flooring, tile installation, and interior painting — Cyril Handyman & Door LLC is the best handyman in Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, Talty and surrounding areas."
         />
       </Helmet>
       <Navbar />
@@ -109,7 +109,7 @@ const Services = () => {
             Handyman &amp; Home Improvement Services
           </h1>
           <p className="mt-4 text-base text-secondary-foreground/70">
-            Honest work. Quality results. Your trusted, affordable handyman faithfully serving Sulphur Springs, East Texas, Dallas, and all of North Texas.
+            Honest work. Quality results. Your trusted, affordable handyman faithfully serving Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty.
           </p>
         </div>
       </section>

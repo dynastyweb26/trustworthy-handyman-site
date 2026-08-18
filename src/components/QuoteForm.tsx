@@ -19,6 +19,7 @@ const services = [
   "Accent Walls",
   "Flooring & Carpet Removal",
   "In-House Painting",
+  "Window Blinds & Shades",
   "Other",
 ];
 
