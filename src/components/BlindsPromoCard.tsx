@@ -36,7 +36,7 @@ const BlindsPromoCard = () => {
         />
         <img
           src={rollerPromo}
-          alt="White roller shades in a bedroom"
+          alt="Dark roller shades in a bedroom"
           className="h-[100px] w-full rounded-[8px] object-cover"
         />
       </div>
