@@ -75,7 +75,7 @@ const BlindsGallery = ({ images, categoryName }: BlindsGalleryProps) => {
       </div>
 
       <p className="mt-4 text-center text-base text-muted-foreground">
-        Product photos courtesy of JDX Blinds. Fabric made in Korea by Harrom Textile.
+        Fabric made in Korea by Harrom Textile.
       </p>
 
       <DialogPrimitive.Root
