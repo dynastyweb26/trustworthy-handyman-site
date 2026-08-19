@@ -39,9 +39,31 @@ const BlindsDetailPage = ({ data }: BlindsDetailPageProps) => {
         </div>
       </section>
 
+      {/* Photo Gallery */}
+      {data.images && data.images.length > 0 && (
+        <section className="bg-background">
+          <div className="container mx-auto px-4 py-16 lg:px-8 lg:py-24">
+            <div className="mx-auto max-w-2xl text-center">
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-primary">
+                Gallery
+              </p>
+              <h2 className="mt-3 font-heading text-2xl font-bold uppercase tracking-tight lg:text-3xl">
+                {data.name} Product Photos
+              </h2>
+              <p className="mt-4 text-base text-muted-foreground">
+                Product photos showing available fabrics and styles. Select any photo to view it full size.
+              </p>
+            </div>
+            <div className="mt-12">
+              <BlindsGallery images={data.images} categoryName={data.name} />
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Detail Content */}
       <section className="bg-background">
-        <div className="container mx-auto grid gap-10 px-4 py-16 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-24">
+        <div className="container mx-auto grid gap-10 px-4 pb-16 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:pb-24">
           <div>
             <h2 className="font-heading text-2xl font-bold uppercase tracking-tight lg:text-3xl">
               Why Choose {data.name}
@@ -66,28 +88,6 @@ const BlindsDetailPage = ({ data }: BlindsDetailPageProps) => {
           </div>
         </div>
       </section>
-
-      {/* Photo Gallery */}
-      {data.images && data.images.length > 0 && (
-        <section className="bg-background">
-          <div className="container mx-auto px-4 pb-16 lg:px-8 lg:pb-24">
-            <div className="mx-auto max-w-2xl text-center">
-              <p className="text-xs font-bold uppercase tracking-[0.15em] text-primary">
-                Gallery
-              </p>
-              <h2 className="mt-3 font-heading text-2xl font-bold uppercase tracking-tight lg:text-3xl">
-                {data.name} in Real Homes
-              </h2>
-              <p className="mt-4 text-base text-muted-foreground">
-                A closer look at recent installations. Select any photo to view it full size.
-              </p>
-            </div>
-            <div className="mt-12">
-              <BlindsGallery images={data.images} categoryName={data.name} />
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Bottom CTA */}
       <section className="bg-secondary text-secondary-foreground">

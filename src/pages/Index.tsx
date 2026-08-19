@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-transparent.png";
 import {
   Wrench,
   Tv,
