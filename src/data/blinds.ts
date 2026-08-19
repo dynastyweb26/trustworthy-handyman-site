@@ -50,14 +50,14 @@ export const blindsCategories: BlindCategory[] = [
     path: "/blinds/zebra",
     name: "Zebra Blinds",
     shortDesc:
-      "Alternating sheer and solid bands for adjustable light and privacy — beaded chain or motor operated, not available cordless.",
+      "Alternating sheer and solid bands for adjustable light and privacy — string or motor operated, not available cordless.",
     description:
-      "Zebra blinds are made from alternating bands of sheer and solid fabric on a single shade, so shifting the bands adjusts light and privacy without swapping treatments. Available in light-filtering or blackout fabric, in white, mushroom, beige, light grey, dark grey, khaki, wood, and charcoal. They're operated by a beaded chain or motor — zebra blinds are not available cordless. Fabric made in Korea by Harrom Textile. Custom made to measure, with a lead time of about two weeks.",
+      "Zebra blinds are made from alternating bands of sheer and solid fabric on a single shade, so shifting the bands adjusts light and privacy without swapping treatments. Available in light-filtering or blackout fabric, in white, mushroom, beige, light grey, dark grey, khaki, wood, and charcoal. They're operated by a string or motor — zebra blinds are not available cordless. Fabric made in Korea by Harrom Textile. Custom made to measure, with a lead time of about two weeks.",
     features: [
       "Alternating sheer and solid fabric bands adjust light and privacy from one shade",
       "Available in light-filtering or blackout fabric",
       "Colors: white, mushroom, beige, light grey, dark grey, khaki, wood, charcoal",
-      "Operated by beaded chain or motor — not available cordless",
+      "Operated by string or motor — not available cordless",
       "Custom made to measure — about a two-week lead time",
     ],
     images: [
@@ -96,14 +96,14 @@ export const blindsCategories: BlindCategory[] = [
     path: "/blinds/roller",
     name: "Roller Blinds",
     shortDesc:
-      "A single flat fabric panel for clean, simple light control — available cordless, beaded chain, or motorized.",
+      "A single flat fabric panel for clean, simple light control — available cordless, string, or motorized.",
     description:
-      "Roller blinds are a single flat fabric panel that rolls neatly up and down — no bands, no slats. Available in light-filtering or blackout fabric, in white, ivory, sand, mocha, grey, and charcoal. Unlike zebra blinds, roller blinds are available cordless, along with beaded chain and motorized options. Fabric made in Korea by Harrom Textile. Custom made to measure, with a lead time of about two weeks.",
+      "Roller blinds are a single flat fabric panel that rolls neatly up and down — no bands, no slats. Available in light-filtering or blackout fabric, in white, ivory, sand, mocha, grey, and charcoal. Unlike zebra blinds, roller blinds are available cordless, along with string and motorized options. Fabric made in Korea by Harrom Textile. Custom made to measure, with a lead time of about two weeks.",
     features: [
       "Single flat fabric panel for a clean, minimalist look",
       "Available in light-filtering or blackout fabric",
       "Colors: white, ivory, sand, mocha, grey, charcoal",
-      "Available cordless, plus beaded chain and motorized options",
+      "Available cordless, plus string and motorized options",
       "Custom made to measure — about a two-week lead time",
     ],
     images: [
