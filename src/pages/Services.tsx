@@ -8,9 +8,10 @@ import mediaWall1 from "@/assets/media-wall-1.jpg";
 import mediaWall2 from "@/assets/media-wall-2.jpg";
 import mediaWall3 from "@/assets/media-wall-3.png";
 import mediaWall4 from "@/assets/media-wall-4.jpg";
-import garageDoor1 from "@/assets/garage-door-1.png";
-import garageDoor2 from "@/assets/garage-door-2.png";
-import garageDoor3 from "@/assets/garage-door-3.png";
+import garageModern from "@/assets/garage/modern-black-flush.webp";
+import garageBrown from "@/assets/garage/brown-windows-front.webp";
+import garageWhite from "@/assets/garage/after-white-windows.webp";
+import garageInterior from "@/assets/garage/interior-double-windows.webp";
 import kitchen1 from "@/assets/kitchen-1.jpg";
 import kitchen2 from "@/assets/kitchen-2.jpg";
 import kitchen3 from "@/assets/kitchen-3.jpg";
@@ -37,9 +38,10 @@ const serviceSections: ServiceSection[] = [
     description:
       "From garage door repair to full installations and opener replacement — garage doors are our specialty. Same day service available across Forney, Mesquite, and Rockwall. Get a free quote today.",
     gallery: [
-      { alt: "Rustic wooden garage door with iron hardware", src: garageDoor1 },
-      { alt: "White panel garage door installation", src: garageDoor2 },
-      { alt: "Dark garage door with window panels", src: garageDoor3 },
+      { alt: "Modern black flush garage door with window strip", src: garageModern },
+      { alt: "Dark brown garage door with window inserts", src: garageBrown },
+      { alt: "New white raised-panel garage door with windows", src: garageWhite },
+      { alt: "Two new white garage doors with windows, inside view", src: garageInterior },
     ],
     link: { to: "/garage-doors", label: "Garage Door Repair & Installation →" },
   },

@@ -6,8 +6,20 @@ import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import { Button } from "@/components/ui/button";
 import { SERVICE_AREA_TEXT } from "@/data/serviceArea";
-import garageBefore from "@/assets/garage-door-2.png";
-import garageAfter from "@/assets/garage-door-3.png";
+import BlindsGallery from "@/components/BlindsGallery";
+import type { GalleryImage } from "@/data/blinds";
+import before1294 from "@/assets/garage/before-white-raised-panel.webp";
+import after1294 from "@/assets/garage/after-white-windows.webp";
+import beforeInterior from "@/assets/garage/before-interior.webp";
+import afterInterior from "@/assets/garage/after-interior.webp";
+import beforeWhite from "@/assets/garage-door-2.png";
+import afterBrown from "@/assets/garage-door-3.png";
+import brownFront from "@/assets/garage/brown-windows-front.webp";
+import brownAngle from "@/assets/garage/brown-windows-angle.webp";
+import modernBlack from "@/assets/garage/modern-black-flush.webp";
+import whiteStone from "@/assets/garage/white-raised-panel-stone.webp";
+import interiorDouble from "@/assets/garage/interior-double-windows.webp";
+import interiorModern from "@/assets/garage/interior-modern-windows.webp";
 
 const PHONE_DISPLAY = "945-344-4580";
 const PHONE_HREF = "tel:+19453444580";
@@ -51,6 +63,33 @@ const steps = [
   { title: "Call or request a quote", desc: "Tell us what's going on with your door. Calls get the fastest response." },
   { title: "Get a free quote", desc: "We look at the problem and give you an honest price before any work starts." },
   { title: "Door fixed", desc: "We complete the repair or installation, often the same day." },
+];
+
+const beforeAfter = [
+  {
+    caption: "Replaced a worn raised-panel door with a new door and window inserts.",
+    before: { src: before1294, alt: "Old white raised-panel garage door before replacement" },
+    after: { src: after1294, alt: "New white raised-panel garage door with a row of windows" },
+  },
+  {
+    caption: "Same garage from the inside: old door out, new insulated door with windows in.",
+    before: { src: beforeInterior, alt: "Inside view of an old garage door with metal struts before replacement" },
+    after: { src: afterInterior, alt: "Inside view of a new flush garage door with windows and new springs" },
+  },
+  {
+    caption: "A white panel door swapped for a dark brown door with windows.",
+    before: { src: beforeWhite, alt: "White raised-panel garage door before replacement" },
+    after: { src: afterBrown, alt: "New dark brown garage door with window inserts" },
+  },
+];
+
+const recentWork: GalleryImage[] = [
+  { src: modernBlack, alt: "Modern black flush garage door with vertical window strip", caption: "Modern flush door" },
+  { src: brownFront, alt: "Dark brown garage door with window inserts, front view", caption: "New door with windows" },
+  { src: whiteStone, alt: "New white raised-panel garage door on a stone and siding home", caption: "New construction install" },
+  { src: interiorModern, alt: "Inside view of a new white garage door with a vertical window column", caption: "Modern door, inside view" },
+  { src: interiorDouble, alt: "Two new white garage doors with windows, inside view", caption: "Double door install" },
+  { src: brownAngle, alt: "Dark brown garage door with windows, side angle", caption: "Brown door, side view" },
 ];
 
 const faqs = [
@@ -171,29 +210,49 @@ const GarageDoors = () => {
           <h2 className="mb-2 text-center font-heading text-3xl font-bold uppercase tracking-tight lg:text-4xl">
             Before &amp; After
           </h2>
-          <p className="mb-12 text-center text-muted-foreground">
-            A recent garage door replacement: same house, new door.
-          </p>
-          <div className="grid gap-6 md:grid-cols-2">
-            {[
-              { src: garageBefore, label: "Before", alt: "Old white raised-panel garage door before replacement" },
-              { src: garageAfter, label: "After", alt: "New dark brown garage door with window inserts after installation" },
-            ].map((img) => (
-              <figure key={img.label} className="overflow-hidden rounded-lg border border-border bg-card">
-                <div className="aspect-[16/9] overflow-hidden">
-                  <img src={img.src} alt={img.alt} className="h-full w-full object-cover" loading="lazy" />
+          <p className="mb-12 text-center text-muted-foreground">Real garage door replacements by our crew.</p>
+          <div className="flex flex-col gap-10">
+            {beforeAfter.map((pair) => (
+              <div key={pair.caption}>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {[
+                    { ...pair.before, label: "Before" },
+                    { ...pair.after, label: "After" },
+                  ].map((img) => (
+                    <figure key={img.label} className="overflow-hidden rounded-lg border border-border bg-card">
+                      <div className="relative aspect-[4/3] overflow-hidden">
+                        <img src={img.src} alt={img.alt} className="h-full w-full object-cover" loading="lazy" />
+                        <span
+                          className={`absolute left-3 top-3 rounded px-2.5 py-1 font-heading text-xs font-semibold uppercase tracking-widest ${
+                            img.label === "After" ? "bg-primary text-primary-foreground" : "bg-secondary text-secondary-foreground"
+                          }`}
+                        >
+                          {img.label}
+                        </span>
+                      </div>
+                    </figure>
+                  ))}
                 </div>
-                <figcaption className="px-5 py-3 font-heading text-sm font-semibold uppercase tracking-widest">
-                  {img.label}
-                </figcaption>
-              </figure>
+                <p className="mt-3 text-center text-sm text-muted-foreground">{pair.caption}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Common problems */}
+      {/* Recent work */}
       <section className="bg-background">
+        <div className="container mx-auto px-4 py-16 lg:px-8 lg:py-24">
+          <h2 className="mb-2 text-center font-heading text-3xl font-bold uppercase tracking-tight lg:text-4xl">
+            Recent Garage Door Work
+          </h2>
+          <p className="mb-12 text-center text-muted-foreground">Select any photo to view it full size.</p>
+          <BlindsGallery images={recentWork} categoryName="Garage door" />
+        </div>
+      </section>
+
+      {/* Common problems */}
+      <section className="bg-muted">
         <div className="container mx-auto grid gap-10 px-4 py-16 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-24">
           <div>
             <h2 className="font-heading text-2xl font-bold uppercase tracking-tight lg:text-3xl">
@@ -225,7 +284,7 @@ const GarageDoors = () => {
       </section>
 
       {/* How it works */}
-      <section className="bg-muted">
+      <section className="bg-background">
         <div className="container mx-auto px-4 py-16 lg:px-8 lg:py-24">
           <h2 className="mb-12 text-center font-heading text-3xl font-bold uppercase tracking-tight lg:text-4xl">
             How It Works
@@ -243,7 +302,7 @@ const GarageDoors = () => {
       </section>
 
       {/* FAQ + service area */}
-      <section className="bg-background">
+      <section className="bg-muted">
         <div className="container mx-auto max-w-3xl px-4 py-16 lg:px-8 lg:py-24">
           <h2 className="mb-8 text-center font-heading text-3xl font-bold uppercase tracking-tight lg:text-4xl">
             Questions

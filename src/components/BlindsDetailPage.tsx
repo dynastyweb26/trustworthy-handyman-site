@@ -57,7 +57,11 @@ const BlindsDetailPage = ({ data }: BlindsDetailPageProps) => {
               </p>
             </div>
             <div className="mt-12">
-              <BlindsGallery images={data.images} categoryName={data.name} />
+              <BlindsGallery
+                images={data.images}
+                categoryName={data.name}
+                footnote="Fabric made in Korea by Harrom Textile."
+              />
             </div>
           </div>
         </section>

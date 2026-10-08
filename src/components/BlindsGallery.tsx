@@ -7,6 +7,8 @@ import type { GalleryImage } from "@/data/blinds";
 interface BlindsGalleryProps {
   images: GalleryImage[];
   categoryName: string;
+  /** Optional line under the grid, e.g. a supplier credit. */
+  footnote?: string;
 }
 
 /**
@@ -22,7 +24,7 @@ interface BlindsGalleryProps {
  * left/right arrow-key navigation layered on top. Every motion is gated behind
  * `motion-safe:` so prefers-reduced-motion users get a static experience.
  */
-const BlindsGallery = ({ images, categoryName }: BlindsGalleryProps) => {
+const BlindsGallery = ({ images, categoryName, footnote }: BlindsGalleryProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const isOpen = openIndex !== null;
   const active = isOpen ? images[openIndex] : null;
@@ -74,9 +76,7 @@ const BlindsGallery = ({ images, categoryName }: BlindsGalleryProps) => {
         ))}
       </div>
 
-      <p className="mt-4 text-center text-base text-muted-foreground">
-        Fabric made in Korea by Harrom Textile.
-      </p>
+      {footnote && <p className="mt-4 text-center text-base text-muted-foreground">{footnote}</p>}
 
       <DialogPrimitive.Root
         open={isOpen}

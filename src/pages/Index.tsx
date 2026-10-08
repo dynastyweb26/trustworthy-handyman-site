@@ -19,7 +19,7 @@ import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import BlindsPromoCard from "@/components/BlindsPromoCard";
 import { Button } from "@/components/ui/button";
-import gallery1 from "@/assets/gallery-1.png";
+import gallery1 from "@/assets/garage/modern-black-flush.webp";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.png";
 import gallery4 from "@/assets/gallery-4.jpg";
@@ -42,7 +42,7 @@ const badges = [
 ];
 
 const galleryPlaceholders = [
-  { alt: "Garage door installation by Cyril Handyman & Door LLC", src: gallery1 },
+  { alt: "Modern black garage door installed by Cyril Handyman & Door LLC", src: gallery1 },
   { alt: "Custom media wall design with LED lighting", src: gallery2 },
   { alt: "Kitchen renovation with marble countertops", src: gallery3 },
   { alt: "Black and gold accent wall", src: gallery4 },
