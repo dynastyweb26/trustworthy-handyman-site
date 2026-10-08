@@ -59,6 +59,8 @@ const Index = () => {
           name="description"
           content="Same-day garage door repair, openers, and custom window blinds and shades in Forney, Mesquite, Rockwall, Garland, Dallas, and across DFW. Free quotes."
         />
+        <link rel="canonical" href="https://crazydoorhandyman.com/" />
+        <meta property="og:url" content="https://crazydoorhandyman.com/" />
       </Helmet>
       <Navbar />
 

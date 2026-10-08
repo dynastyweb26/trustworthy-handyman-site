@@ -15,6 +15,8 @@ const Blinds = () => {
           name="description"
           content="Zebra, roller, blackout, and solar patio screens, custom-fit and installed in Forney, Rockwall, Mesquite, Garland, Dallas, and across DFW. Free quotes."
         />
+        <link rel="canonical" href="https://crazydoorhandyman.com/blinds" />
+        <meta property="og:url" content="https://crazydoorhandyman.com/blinds" />
       </Helmet>
       <Navbar />
 

@@ -14,6 +14,8 @@ const Contact = () => {
           name="description"
           content="Free quotes for garage door repair (same-day service available), window blinds and shades, and handyman work. Serving Forney, Rockwall, Mesquite, and DFW. Call 945-344-4580."
         />
+        <link rel="canonical" href="https://crazydoorhandyman.com/contact" />
+        <meta property="og:url" content="https://crazydoorhandyman.com/contact" />
       </Helmet>
       <Navbar />
 

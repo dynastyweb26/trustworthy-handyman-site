@@ -78,6 +78,7 @@ const GarageDoors = () => {
           content="Same-day garage door repair, opener replacement, and new garage door installation in Forney, Rockwall, Mesquite, Garland, Dallas, and DFW. Free quotes. Call 945-344-4580."
         />
         <link rel="canonical" href="https://crazydoorhandyman.com/garage-doors" />
+        <meta property="og:url" content="https://crazydoorhandyman.com/garage-doors" />
       </Helmet>
       <Navbar />
 

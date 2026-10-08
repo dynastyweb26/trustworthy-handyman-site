@@ -100,6 +100,8 @@ const Services = () => {
           name="description"
           content="Garage door repair and installation, kitchen renovation, media and accent walls, LVP flooring, and painting across Forney, Rockwall, Mesquite, Garland, Dallas, and DFW. Free quotes."
         />
+        <link rel="canonical" href="https://crazydoorhandyman.com/services" />
+        <meta property="og:url" content="https://crazydoorhandyman.com/services" />
       </Helmet>
       <Navbar />
 

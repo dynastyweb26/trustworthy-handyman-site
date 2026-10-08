@@ -17,6 +17,8 @@ const BlindsDetailPage = ({ data }: BlindsDetailPageProps) => {
       <Helmet>
         <title>{data.metaTitle}</title>
         <meta name="description" content={data.metaDescription} />
+        <link rel="canonical" href={`https://crazydoorhandyman.com${data.path}`} />
+        <meta property="og:url" content={`https://crazydoorhandyman.com${data.path}`} />
       </Helmet>
       <Navbar />
 
