@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { SERVICE_AREA_TEXT } from "@/data/serviceArea";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import QuoteForm from "@/components/QuoteForm";
+import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { blindsCategories } from "@/data/blinds";
 
@@ -58,20 +60,32 @@ const Blinds = () => {
         </div>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="bg-secondary text-secondary-foreground">
-        <div className="container mx-auto px-4 py-16 text-center lg:px-8 lg:py-20">
-          <h2 className="font-heading text-2xl font-bold uppercase tracking-tight lg:text-3xl">
-            Let's talk — get your free quote today.
-          </h2>
-          <div className="mt-8">
-            <Button
-              asChild
-              className="bg-primary font-heading text-sm uppercase tracking-widest text-primary-foreground hover:bg-primary/90"
-              size="lg"
-            >
-              <Link to="/contact">Contact Us</Link>
-            </Button>
+      {/* Quote */}
+      <section id="quote" className="scroll-mt-24 bg-secondary text-secondary-foreground">
+        <div className="container mx-auto grid gap-12 px-4 py-16 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-20">
+          <div className="flex flex-col gap-6">
+            <h2 className="font-heading text-2xl font-bold uppercase tracking-tight lg:text-3xl">
+              Get a free blinds quote
+            </h2>
+            <p className="max-w-md text-base leading-relaxed text-secondary-foreground/80">
+              Tell us which rooms and styles you're thinking about, and we'll get back to you with a
+              price. Prefer to talk? Give us a call.
+            </p>
+            <div>
+              <Button
+                asChild
+                size="lg"
+                className="bg-primary font-heading text-sm uppercase tracking-widest text-primary-foreground hover:bg-primary/90"
+              >
+                <a href="tel:+19453444580">
+                  <Phone size={18} aria-hidden="true" />
+                  Call 945-344-4580
+                </a>
+              </Button>
+            </div>
+          </div>
+          <div className="rounded-lg border border-secondary-foreground/10 bg-secondary-foreground/5 p-6 lg:p-8">
+            <QuoteForm darkMode defaultService="Window Blinds & Shades" />
           </div>
         </div>
       </section>
