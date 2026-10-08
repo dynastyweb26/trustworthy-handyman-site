@@ -128,7 +128,7 @@ const Index = () => {
             <BlindsPromoCard />
           </div>
 
-          <div className="rounded-lg border border-secondary-foreground/10 bg-secondary-foreground/5 p-6 lg:p-8">
+          <div id="quote" className="scroll-mt-24 rounded-lg border border-secondary-foreground/10 bg-secondary-foreground/5 p-6 lg:p-8">
             <h2 className="mb-6 font-heading text-xl font-semibold uppercase tracking-wide">
               Request a Quote
             </h2>

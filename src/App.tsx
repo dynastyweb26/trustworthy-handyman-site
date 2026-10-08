@@ -13,6 +13,7 @@ import RollerBlinds from "./pages/blinds/RollerBlinds";
 import BlackoutBlinds from "./pages/blinds/BlackoutBlinds";
 import SolarPatioScreens from "./pages/blinds/SolarPatioScreens";
 import NotFound from "./pages/NotFound";
+import MobileCallBar from "@/components/MobileCallBar";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <MobileCallBar />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
