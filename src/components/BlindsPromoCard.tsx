@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import zebraPromo from "@/assets/blinds-promo-zebra.png";
+import zebraPromo from "@/assets/blinds-promo-zebra.webp";
 import rollerPromo from "@/assets/blinds-promo-roller.webp";
 import { cn } from "@/lib/utils";
 

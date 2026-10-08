@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { SERVICE_AREA_TEXT } from "@/data/serviceArea";
-import logo from "@/assets/logo-transparent.png";
+import logo from "@/assets/logo-transparent.webp";
 import {
   Wrench,
   Tv,
@@ -22,11 +22,11 @@ import QuoteForm from "@/components/QuoteForm";
 import BlindsPromoCard from "@/components/BlindsPromoCard";
 import { Button } from "@/components/ui/button";
 import gallery1 from "@/assets/garage/modern-black-flush.webp";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.png";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
+import gallery2 from "@/assets/gallery-2.webp";
+import gallery3 from "@/assets/gallery-3.webp";
+import gallery4 from "@/assets/gallery-4.webp";
+import gallery5 from "@/assets/gallery-5.webp";
+import gallery6 from "@/assets/gallery-6.webp";
 
 const services = [
   { icon: Wrench, title: "Garage Door Services", desc: "Installations, repairs & opener replacements — our specialty.", path: "/garage-doors" },
