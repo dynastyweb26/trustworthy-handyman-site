@@ -11,6 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
+import { trackQuoteFormSubmit } from "@/lib/tracking";
 
 const services = [
   "Garage Door Services",
@@ -66,6 +67,7 @@ const QuoteForm = ({
           reply_to: form.phone,
         }
       );
+      trackQuoteFormSubmit();
       toast({
         title: "Your request has been sent!",
         description: "We'll be in touch soon.",
