@@ -27,7 +27,7 @@ import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
 
 const services = [
-  { icon: Wrench, title: "Garage Door Services", desc: "Installations, repairs & opener replacements — our specialty." },
+  { icon: Wrench, title: "Garage Door Services", desc: "Installations, repairs & opener replacements — our specialty.", path: "/garage-doors" },
   { icon: Tv, title: "Media Wall Designs", desc: "Custom built-in entertainment walls with precision & detail." },
   { icon: ChefHat, title: "Kitchen Renovation", desc: "Full kitchen upgrades — cabinets, countertops, backsplash & more." },
   { icon: Layers, title: "Accent Walls", desc: "Feature walls that add character, depth & a custom feel." },
@@ -161,7 +161,7 @@ const Index = () => {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <Link
-                to="/services"
+                to={service.path ?? "/services"}
                 key={service.title}
                 className="group flex flex-col items-center gap-4 rounded-lg border border-border bg-card p-8 text-center transition-all hover:border-primary hover:shadow-md"
               >

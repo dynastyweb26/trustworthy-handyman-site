@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { label: "Home", path: "/" },
   { label: "Services", path: "/services" },
+  { label: "Garage Doors", path: "/garage-doors" },
   { label: "Blinds", path: "/blinds" },
   { label: "Contact", path: "/contact" },
 ];
@@ -70,7 +71,7 @@ const Navbar = () => {
     >
       <div
         className={cn(
-          "container mx-auto flex items-center justify-between px-4 lg:px-8",
+          "container mx-auto flex items-center justify-between gap-6 px-4 lg:px-8",
           "motion-safe:transition-[padding] motion-safe:duration-300",
           scrolled ? "py-2" : "py-4",
         )}
@@ -84,15 +85,15 @@ const Navbar = () => {
               scrolled ? "h-9" : "h-12",
             )}
           />
-          <span className="font-heading text-xl font-bold uppercase tracking-wider text-secondary-foreground">
+          <span className="font-heading text-xl font-bold uppercase tracking-wider text-secondary-foreground lg:text-base xl:text-xl">
             Cyril Handyman &amp; Door LLC
           </span>
         </Link>
 
         {/* Desktop links + phone CTA */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-6 lg:flex 2xl:gap-8">
           <ul
-            className="relative flex items-center gap-8"
+            className="relative flex items-center gap-5 xl:gap-6 2xl:gap-8"
             onMouseLeave={() => moveIndicator(activePath)}
           >
             {navLinks.map((link) => (
@@ -110,7 +111,7 @@ const Navbar = () => {
                   onFocus={() => moveIndicator(link.path)}
                   onBlur={() => moveIndicator(activePath)}
                   className={cn(
-                    "flex h-11 items-center font-heading text-base font-medium uppercase tracking-widest text-secondary-foreground transition-opacity hover:opacity-100",
+                    "flex h-11 items-center whitespace-nowrap font-heading text-sm font-medium uppercase tracking-widest text-secondary-foreground 2xl:text-base transition-opacity hover:opacity-100",
                     isActive(link.path) ? "opacity-100" : "opacity-80",
                   )}
                 >
@@ -131,7 +132,7 @@ const Navbar = () => {
 
           <a
             href={PHONE_HREF}
-            className="group inline-flex h-12 items-center gap-2 rounded-full border-2 border-primary bg-transparent px-5 font-heading text-base font-semibold uppercase tracking-widest text-secondary-foreground transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
+            className="group inline-flex h-12 items-center gap-2 whitespace-nowrap rounded-full border-2 border-primary bg-transparent px-5 font-heading text-sm 2xl:text-base font-semibold uppercase tracking-widest text-secondary-foreground transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
           >
             <Phone size={18} aria-hidden="true" className="text-primary transition-colors group-hover:text-primary-foreground" />
             <span>{PHONE_DISPLAY}</span>
@@ -140,7 +141,7 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button
-          className="flex h-14 w-14 items-center justify-center text-secondary-foreground md:hidden"
+          className="flex h-14 w-14 items-center justify-center text-secondary-foreground lg:hidden"
           onClick={() => setMobileOpen((open) => !open)}
           aria-label="Toggle navigation menu"
           aria-expanded={mobileOpen}
@@ -150,7 +151,7 @@ const Navbar = () => {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-secondary-foreground/10 bg-secondary md:hidden">
+        <div className="border-t border-secondary-foreground/10 bg-secondary lg:hidden">
           <ul className="flex flex-col gap-1 px-4 py-4">
             {navLinks.map((link) => (
               <li key={link.path}>

@@ -28,6 +28,7 @@ interface ServiceSection {
   title: string;
   description: string;
   gallery: GalleryItem[];
+  link?: { to: string; label: string };
 }
 
 const serviceSections: ServiceSection[] = [
@@ -40,6 +41,7 @@ const serviceSections: ServiceSection[] = [
       { alt: "White panel garage door installation", src: garageDoor2 },
       { alt: "Dark garage door with window panels", src: garageDoor3 },
     ],
+    link: { to: "/garage-doors", label: "Garage Door Repair & Installation →" },
   },
   {
     title: "Media Wall Designs",
@@ -137,6 +139,14 @@ const Services = () => {
                 <p className="mt-4 max-w-lg leading-relaxed text-muted-foreground">
                   {service.description}
                 </p>
+                {service.link && (
+                  <Link
+                    to={service.link.to}
+                    className="mt-6 inline-block font-heading text-xs font-semibold uppercase tracking-widest text-primary hover:underline"
+                  >
+                    {service.link.label}
+                  </Link>
+                )}
               </div>
 
               <div className={`grid gap-3 ${service.gallery.length > 2 ? "grid-cols-2" : "grid-cols-1"} ${isReversed ? "lg:[direction:ltr]" : ""}`}>
