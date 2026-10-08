@@ -15,6 +15,9 @@ const navLinks = [
 const PHONE_DISPLAY = "945-344-4580";
 const PHONE_HREF = "tel:+19453444580";
 
+// useLayoutEffect warns during build-time prerender; fall back to useEffect on the server.
+const useIsoLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
+
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -43,7 +46,7 @@ const Navbar = () => {
   }, []);
 
   // Rest the underline under the active link on route change; re-measure on resize.
-  useLayoutEffect(() => {
+  useIsoLayoutEffect(() => {
     moveIndicator(activePath);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activePath, location.pathname]);
