@@ -4,7 +4,7 @@ import { FileText, Phone } from "lucide-react";
 const PHONE_HREF = "tel:+19453444580";
 
 // Pages that have an inline quote form with id="quote".
-const PAGES_WITH_QUOTE_FORM = new Set(["/", "/garage-doors", "/blinds"]);
+const PAGES_WITH_QUOTE_FORM = new Set(["/", "/garage-doors", "/patio-screens", "/blinds"]);
 
 /**
  * Fixed bottom bar on phones/tablets: one-tap call + jump to a quote form.

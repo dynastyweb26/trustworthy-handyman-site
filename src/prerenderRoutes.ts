@@ -7,6 +7,6 @@ export const PRERENDER_ROUTES = [
   "/blinds/zebra",
   "/blinds/roller",
   "/blinds/blackout",
-  "/blinds/solar-patio-screens",
+  "/patio-screens",
   "/contact",
 ];

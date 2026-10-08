@@ -59,5 +59,6 @@ export const reviews: Record<string, Review> = {
 };
 
 export const garageReviews = [reviews.rochelle, reviews.louis, reviews.jennifer, reviews.jiji, reviews.alveraz, reviews.elvis];
+export const patioReviews = [reviews.lemnyuy, reviews.louis, reviews.jiji];
 export const blindsReviews = [reviews.lemnyuy, reviews.siddhartha, reviews.jiji];
 export const homeReviews = [reviews.rochelle, reviews.chopmoh, reviews.lemnyuy, reviews.siddhartha, reviews.louis, reviews.jennifer];

@@ -9,6 +9,8 @@ interface BlindsGalleryProps {
   categoryName: string;
   /** Optional line under the grid, e.g. a supplier credit. */
   footnote?: string;
+  /** Desktop column count (default 3). */
+  columns?: 3 | 4;
 }
 
 /**
@@ -24,7 +26,7 @@ interface BlindsGalleryProps {
  * left/right arrow-key navigation layered on top. Every motion is gated behind
  * `motion-safe:` so prefers-reduced-motion users get a static experience.
  */
-const BlindsGallery = ({ images, categoryName, footnote }: BlindsGalleryProps) => {
+const BlindsGallery = ({ images, categoryName, footnote, columns = 3 }: BlindsGalleryProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const isOpen = openIndex !== null;
   const active = isOpen ? images[openIndex] : null;
@@ -44,7 +46,7 @@ const BlindsGallery = ({ images, categoryName, footnote }: BlindsGalleryProps) =
 
   return (
     <>
-      <div className="gap-6 [column-fill:_balance] sm:columns-2 lg:columns-3">
+      <div className={cn("gap-6 [column-fill:_balance] sm:columns-2", columns === 4 ? "lg:columns-4" : "lg:columns-3")}>
         {images.map((img, i) => (
           <button
             key={img.src}

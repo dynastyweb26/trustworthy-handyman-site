@@ -195,7 +195,7 @@ export const blindsCategories: BlindCategory[] = [
   },
   {
     slug: "solar-patio-screens",
-    path: "/blinds/solar-patio-screens",
+    path: "/patio-screens",
     name: "Solar & Patio Screens",
     shortDesc:
       "Sunscreen fabric in 1% or 3% openness for heat and glare control, with daytime privacy.",

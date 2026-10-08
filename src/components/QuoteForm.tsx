@@ -21,6 +21,7 @@ const services = [
   "Flooring & Carpet Removal",
   "In-House Painting",
   "Window Blinds & Shades",
+  "Patio & Solar Screens",
   "Other",
 ];
 

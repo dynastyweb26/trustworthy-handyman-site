@@ -1,5 +1,12 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/blinds/solar-patio-screens",
+      "destination": "/patio-screens",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
