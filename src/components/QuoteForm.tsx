@@ -26,16 +26,22 @@ const services = [
 interface QuoteFormProps {
   submitLabel?: string;
   darkMode?: boolean;
+  /** Preselects the service dropdown, e.g. on a service-specific landing page. */
+  defaultService?: string;
 }
 
-const QuoteForm = ({ submitLabel = "Request a Quote", darkMode = false }: QuoteFormProps) => {
+const QuoteForm = ({
+  submitLabel = "Request a Quote",
+  darkMode = false,
+  defaultService = "",
+}: QuoteFormProps) => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
     phone: "",
     city: "",
-    service: "",
+    service: defaultService,
     message: "",
   });
 
@@ -64,7 +70,7 @@ const QuoteForm = ({ submitLabel = "Request a Quote", darkMode = false }: QuoteF
         title: "Your request has been sent!",
         description: "We'll be in touch soon.",
       });
-      setForm({ name: "", phone: "", city: "", service: "", message: "" });
+      setForm({ name: "", phone: "", city: "", service: defaultService, message: "" });
     } catch {
       toast({
         title: "Something went wrong",
