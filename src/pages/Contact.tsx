@@ -12,7 +12,7 @@ const Contact = () => {
         <title>Free Quote | Garage Doors, Blinds & Handyman — Cyril Handyman & Door LLC</title>
         <meta
           name="description"
-          content="Request a free quote for garage door repair, window blinds and shades, or handyman work. Serving Forney, Rockwall, Mesquite, Garland, Dallas, and DFW. Call 945-344-4580."
+          content="Free quotes for garage door repair (same-day service available), window blinds and shades, and handyman work. Serving Forney, Rockwall, Mesquite, and DFW. Call 945-344-4580."
         />
       </Helmet>
       <Navbar />

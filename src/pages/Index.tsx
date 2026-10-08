@@ -57,7 +57,7 @@ const Index = () => {
         <title>Garage Door Repair & Window Blinds Installation | Cyril Handyman & Door LLC — Forney & DFW</title>
         <meta
           name="description"
-          content="Garage door repair, opener replacement, and custom window blinds and shades in Forney, Mesquite, Rockwall, Garland, Dallas, and across DFW. Plus handyman and remodeling work. Free quotes."
+          content="Same-day garage door repair, openers, and custom window blinds and shades in Forney, Mesquite, Rockwall, Garland, Dallas, and across DFW. Free quotes."
         />
       </Helmet>
       <Navbar />
