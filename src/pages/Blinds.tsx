@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { SERVICE_AREA_TEXT } from "@/data/serviceArea";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -9,10 +10,10 @@ const Blinds = () => {
   return (
     <>
       <Helmet>
-        <title>Window Blinds & Shades | Zebra, Roller, Blackout & Solar Screens — Cyril Handyman & Door LLC</title>
+        <title>Custom Window Blinds & Shades Installation | Forney & DFW — Cyril Handyman & Door LLC</title>
         <meta
           name="description"
-          content="Custom window blinds and shades — zebra, roller, blackout, and solar & patio screens — installed across Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty. Get a free quote today."
+          content="Zebra, roller, blackout, and solar patio screens, custom-fit and installed in Forney, Rockwall, Mesquite, Garland, Dallas, and across DFW. Free quotes."
         />
       </Helmet>
       <Navbar />
@@ -24,8 +25,8 @@ const Blinds = () => {
             Window Blinds &amp; Shades
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base text-secondary-foreground/70">
-            Custom-fit blinds and screens installed clean and precise — serving Forney, Mesquite,
-            Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty.
+            Custom-fit blinds and screens installed clean and precise — serving{" "}
+            {SERVICE_AREA_TEXT}.
           </p>
         </div>
       </section>

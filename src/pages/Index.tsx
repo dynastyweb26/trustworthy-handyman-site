@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { SERVICE_AREA_TEXT } from "@/data/serviceArea";
 import logo from "@/assets/logo-transparent.png";
 import {
   Wrench,
@@ -53,10 +54,10 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Cyril Handyman & Door LLC | Handyman Near Me — Garage Doors, Renovation & Home Improvement — Forney, Mesquite & Rockwall</title>
+        <title>Garage Door Repair & Window Blinds Installation | Cyril Handyman & Door LLC — Forney & DFW</title>
         <meta
           name="description"
-          content="Cyril Handyman & Door LLC is your trusted, affordable handyman serving Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty. Garage door repair, kitchen renovation, media walls, accent walls, LVP flooring, cabinet painting and interior painting. Get a free quote today."
+          content="Garage door repair, opener replacement, and custom window blinds and shades in Forney, Mesquite, Rockwall, Garland, Dallas, and across DFW. Plus handyman and remodeling work. Free quotes."
         />
       </Helmet>
       <Navbar />
@@ -153,7 +154,7 @@ const Index = () => {
             What We Do
           </h2>
           <p className="mb-12 text-center text-muted-foreground">
-            Your local handyman for garage doors, renovation, home decor, and more across Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty.
+            Your local pros for garage doors, window blinds, renovation, and more across {SERVICE_AREA_TEXT}.
           </p>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (

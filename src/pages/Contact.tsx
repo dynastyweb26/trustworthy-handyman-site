@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { SERVICE_AREA_TEXT } from "@/data/serviceArea";
 import { Phone, Mail, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -8,10 +9,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Get a Free Quote | Cyril Handyman & Door LLC — Trusted Handyman Serving Forney, Mesquite & Rockwall</title>
+        <title>Free Quote | Garage Doors, Blinds & Handyman — Cyril Handyman & Door LLC</title>
         <meta
           name="description"
-          content="Contact Cyril Handyman & Door LLC for a free quote. Affordable, experienced, and licensed handyman services in Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty. Same day service available."
+          content="Request a free quote for garage door repair, window blinds and shades, or handyman work. Serving Forney, Rockwall, Mesquite, Garland, Dallas, and DFW. Call 945-344-4580."
         />
       </Helmet>
       <Navbar />
@@ -37,7 +38,7 @@ const Contact = () => {
               Get in Touch
             </h2>
             <p className="max-w-md leading-relaxed text-muted-foreground">
-              Whether you need same day garage door repair, a kitchen renovation, LVP flooring, or a fresh coat of paint — Cyril Handyman & Door LLC is your trusted local handyman serving Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty. Reach out for a free quote.
+              Whether you need same day garage door repair, a kitchen renovation, LVP flooring, or a fresh coat of paint — Cyril Handyman & Door LLC is your trusted local handyman serving {SERVICE_AREA_TEXT}. Reach out for a free quote.
             </p>
             <div className="flex flex-col gap-5">
               <a
@@ -70,7 +71,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground">Location</p>
-                  <p className="font-semibold">Faithfully Serving Forney & Nearby Cities</p>
+                  <p className="font-semibold">Based in Forney · Serving DFW</p>
                 </div>
               </div>
             </div>

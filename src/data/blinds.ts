@@ -87,9 +87,9 @@ export const blindsCategories: BlindCategory[] = [
         caption: "Light grey zebra shades in a bedroom",
       },
     ],
-    metaTitle: "Zebra Blinds Installation | Cyril Handyman & Door LLC",
+    metaTitle: "Zebra Blinds Installation in Forney & DFW | Cyril Handyman & Door LLC",
     metaDescription:
-      "Professional zebra blind installation in Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty. Adjustable light and privacy with a modern, banded look.",
+      "Professional zebra blind installation in Forney, Rockwall, Mesquite, Garland, Dallas, and across DFW. Adjustable light and privacy with a modern, banded look.",
   },
   {
     slug: "roller",
@@ -138,9 +138,9 @@ export const blindsCategories: BlindCategory[] = [
         caption: "White roller shades in a bright upstairs room",
       },
     ],
-    metaTitle: "Roller Blinds Installation | Cyril Handyman & Door LLC",
+    metaTitle: "Roller Blinds & Shades Installation in Forney & DFW | Cyril Handyman & Door LLC",
     metaDescription:
-      "Custom roller blind and shade installation across Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty. Simple, clean light control for any room.",
+      "Custom roller blind and shade installation across Forney, Rockwall, Mesquite, Garland, Dallas, and DFW. Simple, clean light control for any room.",
   },
   {
     slug: "blackout",
@@ -189,9 +189,9 @@ export const blindsCategories: BlindCategory[] = [
         caption: "Light grey blackout shades in a bedroom",
       },
     ],
-    metaTitle: "Blackout Blinds Installation | Cyril Handyman & Door LLC",
+    metaTitle: "Blackout Blinds Installation in Forney & DFW | Cyril Handyman & Door LLC",
     metaDescription:
-      "Blackout zebra and roller blind installation for bedrooms, nurseries, and media rooms in Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty.",
+      "Blackout zebra and roller blind installation for bedrooms, nurseries, and media rooms in Forney, Rockwall, Mesquite, Garland, Dallas, and across DFW.",
   },
   {
     slug: "solar-patio-screens",
@@ -220,8 +220,8 @@ export const blindsCategories: BlindCategory[] = [
         caption: "Solar screen on a covered backyard patio",
       },
     ],
-    metaTitle: "Solar & Patio Screens Installation | Cyril Handyman & Door LLC",
+    metaTitle: "Solar & Patio Screens Installation in Forney & DFW | Cyril Handyman & Door LLC",
     metaDescription:
-      "Solar screen and patio screen installation in Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty. Block heat and glare while keeping your view.",
+      "Solar screen and patio screen installation in Forney, Rockwall, Mesquite, Garland, Dallas, and across DFW. Block heat and glare while keeping your view.",
   },
 ];

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { SERVICE_AREA_TEXT } from "@/data/serviceArea";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -64,7 +65,7 @@ const serviceSections: ServiceSection[] = [
   {
     title: "Accent Walls",
     description:
-      "Decorative accent walls and home decor features that add character and depth to any room. Trusted handyman work across Forney, Talty, and surrounding areas.",
+      "Decorative accent walls and home decor features that add character and depth to any room. Trusted handyman work across Forney, Rockwall, Mesquite, and the DFW area.",
     gallery: [
       { alt: "Red LED marble slat accent wall", src: accentWall1 },
       { alt: "Black and gold geometric accent wall with lighting", src: accentWall2 },
@@ -94,10 +95,10 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Handyman Services Near Me | Garage Door Repair, Renovation & Home Improvement — Cyril Handyman & Door LLC Forney, TX</title>
+        <title>Handyman & Remodeling Services | Garage Doors, Kitchens, Media Walls — Cyril Handyman & Door LLC</title>
         <meta
           name="description"
-          content="From garage door repair and opener installation to kitchen renovation, custom entertainment walls, built-in shelving, LVP flooring, tile installation, and interior painting — Cyril Handyman & Door LLC is the best handyman in Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, Talty and surrounding areas."
+          content="Garage door repair and installation, kitchen renovation, media and accent walls, LVP flooring, and painting across Forney, Rockwall, Mesquite, Garland, Dallas, and DFW. Free quotes."
         />
       </Helmet>
       <Navbar />
@@ -109,7 +110,7 @@ const Services = () => {
             Handyman &amp; Home Improvement Services
           </h1>
           <p className="mt-4 text-base text-secondary-foreground/70">
-            Honest work. Quality results. Your trusted, affordable handyman faithfully serving Forney, Mesquite, Sunnyvale, Rockwall, Heath, Terrell, Crandall, Kaufman, and Talty.
+            Honest work. Quality results. Your trusted, affordable handyman faithfully serving {SERVICE_AREA_TEXT}.
           </p>
         </div>
       </section>
