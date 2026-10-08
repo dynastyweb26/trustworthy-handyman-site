@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { Award, Check, Clock, MapPin, Phone, Wrench, Zap, DoorClosed } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Reviews from "@/components/Reviews";
+import { garageReviews } from "@/data/reviews";
 import QuoteForm from "@/components/QuoteForm";
 import { Button } from "@/components/ui/button";
 import { SERVICE_AREA_TEXT } from "@/data/serviceArea";
@@ -251,8 +253,10 @@ const GarageDoors = () => {
         </div>
       </section>
 
+      <Reviews reviews={garageReviews} className="bg-muted" />
+
       {/* Common problems */}
-      <section className="bg-muted">
+      <section className="bg-background">
         <div className="container mx-auto grid gap-10 px-4 py-16 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-24">
           <div>
             <h2 className="font-heading text-2xl font-bold uppercase tracking-tight lg:text-3xl">
@@ -284,7 +288,7 @@ const GarageDoors = () => {
       </section>
 
       {/* How it works */}
-      <section className="bg-background">
+      <section className="bg-muted">
         <div className="container mx-auto px-4 py-16 lg:px-8 lg:py-24">
           <h2 className="mb-12 text-center font-heading text-3xl font-bold uppercase tracking-tight lg:text-4xl">
             How It Works
@@ -302,7 +306,7 @@ const GarageDoors = () => {
       </section>
 
       {/* FAQ + service area */}
-      <section className="bg-muted">
+      <section className="bg-background">
         <div className="container mx-auto max-w-3xl px-4 py-16 lg:px-8 lg:py-24">
           <h2 className="mb-8 text-center font-heading text-3xl font-bold uppercase tracking-tight lg:text-4xl">
             Questions

@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { SERVICE_AREA_TEXT } from "@/data/serviceArea";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Reviews from "@/components/Reviews";
+import { blindsReviews } from "@/data/reviews";
 import QuoteForm from "@/components/QuoteForm";
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -59,6 +61,8 @@ const Blinds = () => {
           </div>
         </div>
       </section>
+
+      <Reviews reviews={blindsReviews} className="bg-muted" />
 
       {/* Quote */}
       <section id="quote" className="scroll-mt-24 bg-secondary text-secondary-foreground">

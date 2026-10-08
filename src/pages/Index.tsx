@@ -16,6 +16,8 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Reviews from "@/components/Reviews";
+import { homeReviews } from "@/data/reviews";
 import QuoteForm from "@/components/QuoteForm";
 import BlindsPromoCard from "@/components/BlindsPromoCard";
 import { Button } from "@/components/ui/button";
@@ -203,6 +205,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <Reviews reviews={homeReviews} />
 
       <Footer />
     </>
